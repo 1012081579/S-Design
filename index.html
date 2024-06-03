@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/console.css" />
+    <link rel="stylesheet" href="./css/hideScrollbar.css" />
+    <link rel="stylesheet" href="./css/blurry-text.css" />
+    <title>Work - S&Design</title>
+    <link rel="icon" type="image/png" href="./images/S.png" />
+    <style>
+      body {
+        opacity: 0; /* 设置初始不透明度为 0 */
+        transition: opacity 1s ease-in-out; /* 添加淡入效果 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 鼠标样式 -->
+    <div id="g-pointer-1"></div>
+    <div id="g-pointer-2"></div>
+    <!-- 鼠标样式 -->
+
+    <div class="container">
+      <div class="txt">
+        <p class="top blurry-text">
+          <a id="openLink" style="text-decoration: none; color: #0cbe59"
+            >Feel free to explore my work and get in touch if you'd like to
+            collaborate or discuss potential design opportunities. Let's bring
+            your digital ideas to life together!</a
+          >
+        </p>
+      </div>
+
+      <div class="img1 blurry-text">
+        <a onclick="sja()">
+          <img src="./images/SJA/index.png" />
+        </a>
+        <p style="font-size: 16px; line-height: 18px">
+          <span style="font-size: 24px">SJA</span><br />"Steam Japan Award"
+        </p>
+      </div>
+      <div class="img2 blurry-text">
+        <a onclick="ui()"><img src="./images/UI/index.png" /></a>
+        <p style="font-size: 16px; line-height: 18px">
+          <span style="font-size: 24px">Paylux</span><br />"Reshaping Payment
+          Software Experience"
+        </p>
+      </div>
+      <div class="img4 blurry-text">
+        <a onclick="web()"><img src="./images/WEB/index.png" /></a>
+        <p style="font-size: 16px; line-height: 18px">
+          <span style="font-size: 24px">Commerce flow</span><br />"Unleash Your
+          E-commerce Management"
+        </p>
+      </div>
+      <div class="img3 blurry-text">
+        <a onclick="vi()"><img src="./images/VI/index.png" /></a>
+        <p style="font-size: 16px; line-height: 18px">
+          <span style="font-size: 24px">One Stone Coffee</span><br />"Brewing
+          Nature's Elegance"
+        </p>
+      </div>
+      <div class="img5 blurry-text">
+        <a onclick="book()"><img src="./images/book/index.png" /></a>
+        <p style="font-size: 16px; line-height: 18px">
+          <span style="font-size: 24px">Religio</span><br />"A Journey into the
+          Depths of Faith"
+        </p>
+      </div>
+      <div class="img6 blurry-text">
+        <a onclick="vista()"><img src="./images/vistaVision/index.png" /></a>
+        <p style="font-size: 16px; line-height: 18px">
+          <span style="font-size: 24px">Vista Vision</span><br />"See the
+          Future, Shape Tomorrow."
+        </p>
+      </div>
+      <div class="img7 blurry-text">
+        <a onclick="hmi()"><img src="./images/HMI/index.png" /></a>
+        <p style="font-size: 16px; line-height: 18px">
+          <span style="font-size: 24px">HMI</span><br />"Human Machine
+          Interface."
+        </p>
+      </div>
+      <div class="img8 blurry-text">
+        <a onclick="way()"><img src="./images/wayFinding/index.png" /></a>
+        <p style="font-size: 16px; line-height: 18px">
+          <span style="font-size: 24px">Way Finding</span><br />"Navigate
+          effortlessly, every step a discovery."
+        </p>
+      </div>
+      <div class="img9 blurry-text">
+        <video
+          src="./images/comingsoon.mp4"
+          muted
+          playsinline
+          preload="metadata"
+          autoplay
+        ></video>
+      </div>
+
+      <div class="txt6">
+        <p class="blurry-text" id="centered-element">
+          <a
+            href="./index.html"
+            style="
+              color: #0cbe59;
+              mix-blend-mode: difference;
+              pointer-events: none;
+              font-family: Helvetica, sans-serif;
+            "
+            >WORK</a
+          ><br />
+          <a
+            onclick="about()"
+            style="color: #0cbe59; font-family: Helvetica, sans-serif"
+            >ABOUT</a
+          >
+          <br />
+          <a
+            onclick="contact()"
+            style="color: #0cbe59; font-family: Helvetica, sans-serif"
+            >CONTACT</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="./js/console.js"></script>
+    <script src="./js/blurry-text.js"></script>
+    <script src="./js/downLoad.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        document.body.style.opacity = "1"; // 页面加载完成后，将不透明度设置为 1，触发淡入效果
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paylux - S&Design</title>
+    <link rel="stylesheet" href="./css/sja.css" />
+    <link rel="stylesheet" href="./css/hideScrollbar.css" />
+    <link rel="stylesheet" href="./css/blurry-text.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="icon" type="image/png" href="./images/S.png" />
+    <style>
+      body {
+        opacity: 0; /* 设置初始不透明度为 0 */
+        transition: opacity 1s ease-in-out; /* 添加淡入效果 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 鼠标样式 -->
+    <div id="g-pointer-1"></div>
+    <div id="g-pointer-2"></div>
+    <!-- 鼠标样式 -->
+
+    <!-- menu -->
+    <div class="menu" id="menu">
+      <ul>
+        <li class="blurry-text"><a onclick="index()">BACK</a></li>
+        <li class="blurry-text"><a onclick="vi()">NEXT</a></li>
+      </ul>
+    </div>
+    <!-- menu -->
+
+    <div class="container">
+      <div class="title">
+        <span class="mainTitle blurry-text"> Paylux </span><br />
+      </div>
+
+      <div class="first">
+        <img src="./images/UI/first.png" alt="" />
+      </div>
+
+      <div class="subtitle blurry-text">
+        <span class="smTitle">"Reshaping the Payment Software Experience"</span
+        ><br /><br />
+        "Step into the future of payments with Paylux, the youthful and dynamic
+        mobile payment solution that's redefining the way you handle your
+        finances! We understand the fast-paced, digital lifestyle of today, and
+        that's why Paylux has emerged to cater to your every payment need."
+        <br /><br />
+        "With Paylux, we're bringing you an unparalleled level of convenience,
+        eliminating the need for bulky wallets or stacks of cards. Whether
+        you're at a coffee shop, shopping mall, or on the go, all you need is
+        your smartphone to complete transactions and enjoy a seamless,
+        lightning-fast payment experience."
+      </div>
+      <div class="mp4 blurry-text">
+        <video
+          src="./images/UI/Preview.mp4"
+          loop
+          muted
+          playsinline
+          preload="metadata"
+          autoplay
+        ></video>
+      </div>
+      <div class="txt1 blurry-text">
+        <p class="txt">
+          Paylux supports multiple payment methods, ensuring you can pay the way
+          you want to. Whether it's via card, bank transfer, or digital wallet,
+          Paylux has you covered.
+        </p>
+      </div>
+      <div class="image1">
+        <div class="overview">
+          <img src="./images/UI/portfolio-2.jpg" alt="overview" />
+        </div>
+      </div>
+      <div class="img2">
+        <img src="./images/UI/portfolio-1.jpg" alt="Price list" />
+      </div>
+      <div class="txt3">
+        Join the Paylux revolution and experience the freedom of modern,
+        hassle-free payments. Download the app now and start exploring a world
+        of convenience, security, and endless possibilities! Pay with
+        confidence, Pay with Paylux.
+      </div>
+
+      <div class="img3">
+        <img src="./images/UI/portfolio-6.jpg" alt="shop" />
+      </div>
+
+      <div class="img5">
+        <img src="./images/UI/portfolio-61.jpg" alt="poster" />
+      </div>
+
+      <div class="txt4">
+        <p>
+          Brand Name: <br />
+          Category: <br />Designer:
+        </p>
+      </div>
+
+      <div class="txt5">
+        <p>"Paylux"<br />"UI Design"<br />"Su Ziyue"</p>
+      </div>
+
+      <div class="txt6">
+        <p class="blurry-text">
+          <a onclick="index()">WORK</a><br />
+          <a onclick="about()">ABOUT</a> <br />
+          <a onclick="contact()">CONTACT</a>
+        </p>
+      </div>
+
+      <div class="txt7">
+        <p class="text">
+          Feel free to explore my work and get in touch if you'd like to
+          collaborate or discuss potential design opportunities. Let's bring
+          your digital ideas to life together!
+        </p>
+
+        <img src="./images/footer.jpg" alt="" />
+      </div>
+    </div>
+    <!-- <script src="./js/console.js"></script> -->
+    <script src="./js/blurry-text.js"></script>
+    <script src="./js/menu.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        document.body.style.opacity = "1"; // 页面加载完成后，将不透明度设置为 1，触发淡入效果
+      });
+    </script>
+  </body>
+</html>

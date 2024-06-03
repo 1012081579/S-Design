@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Stone Coffee - S&Design</title>
+    <link rel="stylesheet" href="./css/sja.css" />
+    <link rel="stylesheet" href="./css/hideScrollbar.css" />
+    <link rel="stylesheet" href="./css/blurry-text.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="icon" type="image/png" href="./images/S.png" />
+    <style>
+      body {
+        opacity: 0; /* 设置初始不透明度为 0 */
+        transition: opacity 1s ease-in-out; /* 添加淡入效果 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 鼠标样式 -->
+    <div id="g-pointer-1"></div>
+    <div id="g-pointer-2"></div>
+    <!-- 鼠标样式 -->
+
+    <!-- menu -->
+    <div class="menu" id="menu">
+      <ul>
+        <li class="blurry-text"><a onclick="index()">BACK</a></li>
+        <li class="blurry-text"><a onclick="web()">NEXT</a></li>
+      </ul>
+    </div>
+    <!-- menu -->
+
+    <div class="container">
+      <div class="title">
+        <span class="mainTitle blurry-text"> One Stone Coffee </span><br />
+      </div>
+
+      <div class="first">
+        <img src="./images/VI/first.png" alt="" />
+      </div>
+
+      <div class="subtitle blurry-text">
+        <span class="smTitle"
+          >"Brewing Nature's Elegance, One Sip at a Time"</span
+        ><br /><br />
+        "In our stone-themed coffee shop, we've drawn inspiration from the
+        enduring beauty of rocks and the comforting allure of coffee. Just as
+        stones have withstood the test of time, they symbolize the unwavering
+        strength and natural grace that we aim to infuse into every cup we
+        serve. Each sip of our coffee is a journey through the ages, a
+        connection with the elemental forces of the earth."
+        <br /><br />
+        "The coffee beans, nurtured by the sun and rain, carry the essence of
+        the natural world, just as the stones scattered across the globe hold
+        within them the stories of our planet's evolution. Our commitment to the
+        art of coffee is as unwavering as the bedrock beneath our feet. We've
+        carefully selected and roasted our beans to perfection, ensuring that
+        every cup is a testament to the rich history of coffee-making. And just
+        as the stones have accumulated wisdom and history, our baristas have
+        honed their craft to serve you the finest brews."
+      </div>
+      <div class="mp4 blurry-text">
+        <video
+          src="./images/VI/video.mp4"
+          muted
+          playsinline
+          preload="metadata"
+          autoplay
+        ></video>
+      </div>
+      <div class="txt1 blurry-text">
+        <p class="txt">
+          It's a place where time seems to slow down, allowing you to savor each
+          moment and indulge in the simple pleasure of life.
+        </p>
+      </div>
+      <div class="image1">
+        <div class="overview">
+          <img src="./images/VI/mock@2x.jpg" alt="overview" />
+        </div>
+      </div>
+      <div class="img2">
+        <img src="./images/VI/bread@2x.jpg" alt="Price list" />
+      </div>
+      <div class="txt3">
+        Coffee is a beverage prepared from roasted coffee beans. Darkly colored,
+        bitter, and slightly acidic, coffee has a stimulating effect on humans,
+        primarily due to its caffeine content. It has the highest sales in the
+        world market for hot drinks.
+      </div>
+
+      <div class="img3">
+        <img src="./images/VI/poster1.jpg" alt="shop" />
+      </div>
+
+      <div class="img5">
+        <img src="./images/VI/poster2.jpg" alt="poster" />
+      </div>
+
+      <div class="txt4">
+        <p>
+          Brand Name: <br />
+          Category: <br />Designer:
+        </p>
+      </div>
+
+      <div class="txt5">
+        <p>"One Stone Coffee"<br />"VI Design"<br />"Su Ziyue"</p>
+      </div>
+
+      <div class="txt6">
+        <p class="blurry-text">
+          <a onclick="index()">WORK</a><br />
+          <a onclick="about()">ABOUT</a> <br />
+          <a onclick="contact()">CONTACT</a>
+        </p>
+      </div>
+
+      <div class="txt7">
+        <p class="text">
+          Feel free to explore my work and get in touch if you'd like to
+          collaborate or discuss potential design opportunities. Let's bring
+          your digital ideas to life together!
+        </p>
+
+        <img src="./images/footer.jpg" alt="" />
+      </div>
+    </div>
+    <!-- <script src="./js/console.js"></script> -->
+    <script src="./js/blurry-text.js"></script>
+    <script src="./js/menu.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        document.body.style.opacity = "1"; // 页面加载完成后，将不透明度设置为 1，触发淡入效果
+      });
+    </script>
+  </body>
+</html>

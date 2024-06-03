@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/console.css" />
+    <link rel="stylesheet" href="./css/hideScrollbar.css" />
+    <link rel="stylesheet" href="./css/blurry-text.css" />
+    <title>Contact - S&Design</title>
+    <link rel="icon" type="image/png" href="./images/S.png" />
+    <style>
+      body {
+        opacity: 0; /* 设置初始不透明度为 0 */
+        transition: opacity 1s ease-in-out; /* 添加淡入效果 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 鼠标样式 -->
+    <div id="g-pointer-1"></div>
+    <div id="g-pointer-2"></div>
+    <!-- 鼠标样式 -->
+
+    <div class="container">
+      <div class="txt">
+        <p class="top blurry-text">
+          <a id="openLink" style="text-decoration: none; color: #0cbe59"
+            >Feel free to explore my work and get in touch if you'd like to
+            collaborate or discuss potential design opportunities. Let's bring
+            your digital ideas to life together!</a
+          >
+        </p>
+      </div>
+
+      <div class="txt2">
+        <img src="./images/contact/me.png" alt="" />
+      </div>
+
+      <div class="img1 blurry-text">
+        <p>
+          Hey there! I'm SU ZIYUE, a passionate creative mind fueled by the
+          endless possibilities of design. Whether it's crafting sleek logos,
+          conceptualizing captivating illustrations, or bringing brands to life
+          through visual storytelling, I thrive on turning ideas into visual
+          masterpieces. You can catch up with my latest projects,
+          behind-the-scenes insights, and the power of design to inspire and
+          evoke emotions on my social media channels. Follow me on
+          <a
+            href="https://twitter.com/ziyuesu3"
+            target="_blank"
+            style="text-decoration: none; color: #0ba14c"
+            >Twitter</a
+          >,
+          <a
+            href="https://instagram.com/sushietsu?igshid=OGQ5ZDc2ODk2ZA=="
+            target="_blank"
+            style="text-decoration: none; color: #0ba14c"
+            >Instagram</a
+          >
+          , and
+          <a
+            href="https://www.behance.net/shietsusu"
+            target="_blank"
+            style="text-decoration: none; color: #0ba14c"
+            >Behance</a
+          >
+          for a glimpse into my creative journey, and let's connect and
+          collaborate to bring more beauty into the world of design!
+        </p>
+      </div>
+
+      <div class="txt6">
+        <p class="blurry-text" id="centered-element">
+          <a
+            onclick="index()"
+            style="color: #0cbe59; font-family: Helvetica, sans-serif"
+            >WORK</a
+          ><br />
+          <a
+            onclick="about()"
+            style="color: #0cbe59; font-family: Helvetica, sans-serif"
+            >ABOUT</a
+          >
+          <br />
+          <a
+            href="contact.html"
+            style="
+              color: #0cbe59;
+              pointer-events: none;
+              font-family: Helvetica, sans-serif;
+            "
+            >CONTACT</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="./js/console.js"></script>
+    <script src="./js/blurry-text.js"></script>
+    <script src="./js/downLoad.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        document.body.style.opacity = "1"; // 页面加载完成后，将不透明度设置为 1，触发淡入效果
+      });
+    </script>
+  </body>
+</html>

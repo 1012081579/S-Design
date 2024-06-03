@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SJA - S&Design</title>
+    <link rel="stylesheet" href="./css/sja.css" />
+    <link rel="stylesheet" href="./css/hideScrollbar.css" />
+    <link rel="stylesheet" href="./css/blurry-text.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="icon" type="image/png" href="./images/S.png" />
+    <style>
+      body {
+        opacity: 0; /* 设置初始不透明度为 0 */
+        transition: opacity 1s ease-in-out; /* 添加淡入效果 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 鼠标样式 -->
+    <div id="g-pointer-1"></div>
+    <div id="g-pointer-2"></div>
+    <!-- 鼠标样式 -->
+
+    <!-- menu -->
+    <div class="menu" id="menu">
+      <ul>
+        <li class="blurry-text"><a onclick="index()">BACK</a></li>
+        <li class="blurry-text"><a onclick="ui()">NEXT</a></li>
+      </ul>
+    </div>
+    <!-- menu -->
+
+    <div class="container">
+      <div class="title">
+        <span class="mainTitle blurry-text"
+          ><a
+            href="https://steam-japan.com/award/"
+            target="_blank"
+            style="text-decoration: none; color: #0ba14c"
+          >
+            SJA
+          </a></span
+        ><br />
+      </div>
+
+      <div class="first">
+        <img src="./images/SJA/first.png" alt="" />
+      </div>
+
+      <div class="subtitle blurry-text">
+        <span class="smTitle">"Steam Japan Award"</span><br /><br />
+        The call for adapting to the changing times has long been echoed, and
+        indeed, lately, we've reached a point where we're all demanded to
+        embrace every update. Post-coronavirus, the essential qualities sought
+        in the youth who will shape Japan's future are the ability to "accept
+        change and forge ahead" and the capacity to "create anew". The era of
+        feeling secure and safe by sticking to a certain path has come to an
+        end, and we are transitioning to the next era. In Japan as well, a new
+        generation is emerging, already accepting change, setting their own
+        challenges, and solving them with their own skills.
+        <br /><br />
+        With such sentiments in mind, we want to shine a spotlight on these
+        individuals. Therefore, we are launching an initiative to commend middle
+        and high school students who "set their own challenges, shape their
+        ideas, and resolve them".
+      </div>
+      <div class="mp4 blurry-text">
+        <video
+          src="./images/SJA/video.mp4"
+          muted
+          playsinline
+          preload="metadata"
+          autoplay
+        ></video>
+      </div>
+      <div class="txt1 blurry-text">
+        <p class="txt">
+          "STEAM" stands for Science, Technology, Engineering, Arts, and
+          Mathematics. It's an acronym created by combining the initial letters
+          of these five words.
+        </p>
+      </div>
+      <div class="image1">
+        <div class="overview">
+          <img src="./images/SJA/img1.jpg" alt="overview" />
+        </div>
+      </div>
+      <div class="img2">
+        <img src="./images/SJA/img2.jpg" alt="Price list" />
+      </div>
+      <div class="txt3">
+        In this award, we will recognize individuals who set their own
+        challenges and create new changes, embodying what we call "STEAM talent"
+        — individuals proficient in Science, Technology, Engineering, Arts, and
+        Mathematics.
+      </div>
+
+      <div class="img3">
+        <img src="./images/SJA/img3.jpg" alt="shop" />
+      </div>
+
+      <div class="img5">
+        <img src="./images/SJA/img4.jpg" alt="poster" />
+      </div>
+
+      <div class="txt4">
+        <p>
+          Brand Name: <br />
+          Category: <br />Designer:
+        </p>
+      </div>
+
+      <div class="txt5">
+        <p>"SJA"<br />"Concept Design"<br />"Su Ziyue"</p>
+      </div>
+
+      <div class="txt6">
+        <p class="blurry-text">
+          <a onclick="index()">WORK</a><br />
+          <a onclick="about()">ABOUT</a> <br />
+          <a onclick="contact()">CONTACT</a>
+        </p>
+      </div>
+
+      <div class="txt7">
+        <p class="text">
+          Feel free to explore my work and get in touch if you'd like to
+          collaborate or discuss potential design opportunities. Let's bring
+          your digital ideas to life together!
+        </p>
+
+        <img src="./images/footer.jpg" alt="" />
+      </div>
+    </div>
+    <!-- <script src="./js/console.js"></script> -->
+    <script src="./js/blurry-text.js"></script>
+    <script src="./js/menu.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        document.body.style.opacity = "1"; // 页面加载完成后，将不透明度设置为 1，触发淡入效果
+      });
+    </script>
+  </body>
+</html>

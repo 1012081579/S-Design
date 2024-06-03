@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Religio - S&Design</title>
+    <link rel="stylesheet" href="./css/sja.css" />
+    <link rel="stylesheet" href="./css/hideScrollbar.css" />
+    <link rel="stylesheet" href="./css/blurry-text.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="icon" type="image/png" href="./images/S.png" />
+    <style>
+      body {
+        opacity: 0; /* 设置初始不透明度为 0 */
+        transition: opacity 1s ease-in-out; /* 添加淡入效果 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 鼠标样式 -->
+    <div id="g-pointer-1"></div>
+    <div id="g-pointer-2"></div>
+    <!-- 鼠标样式 -->
+
+    <!-- menu -->
+    <div class="menu" id="menu">
+      <ul>
+        <li class="blurry-text"><a onclick="index()">BACK</a></li>
+        <li class="blurry-text"><a onclick="vista()">NEXT</a></li>
+      </ul>
+    </div>
+    <!-- menu -->
+
+    <div class="container">
+      <div class="title">
+        <span class="mainTitle blurry-text"> Religio </span><br />
+      </div>
+
+      <div class="first">
+        <img src="./images/book/first.png" alt="" />
+      </div>
+
+      <div class="subtitle blurry-text">
+        <span class="smTitle">"A Journey into the Depths of Faith"</span
+        ><br /><br />
+        "Embark on a transformative journey through the heart of Religio, where
+        faith transcends boundaries and enlightenment awaits. Explore the rich
+        tapestry of beliefs, rituals, and spiritual practices that have shaped
+        civilizations for millennia. Discover the profound connections between
+        diverse faiths, and delve into the universal quest for meaning, purpose,
+        and transcendence. Religio beckons, inviting you to explore the depths
+        of your soul and awaken to the divine within."
+        <br /><br />
+        "Uncover the hidden truths of humanity's most profound questions: Who
+        are we? Why are we here? What lies beyond the material world? As you
+        navigate the labyrinth of belief systems, you'll find echoes of your own
+        journey mirrored in the experiences of others. Religio is more than a
+        book; it's a sacred quest, a pilgrimage of the soul."
+      </div>
+      <div class="mp4 blurry-text">
+        <video
+          src="./images/book/Scene_05.mp4"
+          loop
+          muted
+          playsinline
+          preload="metadata"
+          autoplay
+        ></video>
+      </div>
+      <div class="txt1 blurry-text">
+        <p class="txt">
+          Embrace the transformative power of faith and embark on a journey that
+          will forever change how you see yourself, others, and the universe.
+        </p>
+      </div>
+      <div class="image1">
+        <div class="overview">
+          <img src="./images/book/BF01-Book-Folder.jpg" alt="overview" />
+        </div>
+      </div>
+      <div class="img2">
+        <img src="./images/book/BF04-Book-Folder.jpg" alt="Price list" />
+      </div>
+      <div class="txt3">
+        Religio: Where faith becomes a gateway to the infinite, and every step
+        leads you closer to the divine. Are you ready to embark on the journey
+        of a lifetime?
+      </div>
+
+      <div class="img3">
+        <img src="./images/book/BF05-Book.jpg" alt="shop" />
+      </div>
+
+      <div class="img5">
+        <img src="./images/book/BF07-Book-Folder.jpg" alt="poster" />
+      </div>
+
+      <div class="txt4">
+        <p>
+          Brand Name: <br />
+          Category: <br />Designer:
+        </p>
+      </div>
+
+      <div class="txt5">
+        <p>"Religio"<br />"Book Design"<br />"Su Ziyue"</p>
+      </div>
+
+      <div class="txt6">
+        <p class="blurry-text">
+          <a onclick="index()">WORK</a><br />
+          <a onclick="about()">ABOUT</a> <br />
+          <a onclick="contact()">CONTACT</a>
+        </p>
+      </div>
+
+      <div class="txt7">
+        <p class="text">
+          Feel free to explore my work and get in touch if you'd like to
+          collaborate or discuss potential design opportunities. Let's bring
+          your digital ideas to life together!
+        </p>
+        <img src="./images/footer.jpg" alt="" />
+      </div>
+    </div>
+    <!-- <script src="./js/console.js"></script> -->
+    <script src="./js/blurry-text.js"></script>
+    <script src="./js/menu.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        document.body.style.opacity = "1"; // 页面加载完成后，将不透明度设置为 1，触发淡入效果
+      });
+    </script>
+  </body>
+</html>

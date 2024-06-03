@@ -1,0 +1,73 @@
+@media screen and (min-width: 720px) {
+.menu {
+    position: fixed;
+    top: 2vh;
+    left: 0;
+    right: 0;
+    color: #0cbe59;
+    transition: top 0.3s;
+    text-align: center; /* 文本水平居中 */
+    padding: 0 1%; /* 左右边距为 3px */
+    z-index: 10;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* 水平居中对齐 */
+  }
+  
+  .menu li {
+    margin: 0 33.76vw;
+  }
+  
+  .menu1 {
+    /* margin-left: 3%; */
+    float: left;
+  }
+  
+  .menu li a {
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    color: #0ba14c;
+    font-size: 5vw;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .menu {
+    position: fixed;
+    top: 1vh;
+    left: 0;
+    right: 0;
+    color: #0ba14c;
+    transition: top 0.3s;
+    text-align: center; /* 文本水平居中 */
+    padding: 0 1%; /* 左右边距为 3px */
+    z-index: 10;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* 水平居中对齐 */
+  }
+  
+  .menu li {
+    margin: 0 20vw;
+  }
+  
+  .menu1 {
+    /* margin-left: 3%; */
+    float: left;
+  }
+  
+  .menu li a {
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    color: #0ba14c;
+    font-size: 10vw;
+  }
+}

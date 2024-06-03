@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HMI - S&Design</title>
+    <link rel="stylesheet" href="./css/sja.css" />
+    <link rel="stylesheet" href="./css/hideScrollbar.css" />
+    <link rel="stylesheet" href="./css/blurry-text.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="icon" type="image/png" href="./images/S.png" />
+    <style>
+      body {
+        opacity: 0; /* 设置初始不透明度为 0 */
+        transition: opacity 1s ease-in-out; /* 添加淡入效果 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 鼠标样式 -->
+    <div id="g-pointer-1"></div>
+    <div id="g-pointer-2"></div>
+    <!-- 鼠标样式 -->
+
+    <!-- menu -->
+    <div class="menu" id="menu">
+      <ul>
+        <li class="blurry-text"><a onclick="index()">BACK</a></li>
+        <li class="blurry-text"><a onclick="way()">NEXT</a></li>
+      </ul>
+    </div>
+    <!-- menu -->
+
+    <div class="container">
+      <div class="title">
+        <span class="mainTitle blurry-text"> HMI </span><br />
+      </div>
+
+      <div class="first">
+        <img src="./images/HMI/first.png" alt="" />
+      </div>
+
+      <div class="subtitle blurry-text">
+        <span class="smTitle">"Human Machine Interface"</span><br /><br />
+
+        " Our team consists of visionary designers, engineers, and creative
+        talents dedicated to crafting cutting-edge solutions that redefine
+        in-car interaction experiences. Through meticulous attention to detail
+        and relentless pursuit of excellence, we strive to provide intuitive,
+        immersive, and seamless user experiences in automotive interfaces. "
+        <br /><br />
+        "Leveraging the latest advancements in technology and design, our goal
+        is to empower drivers and passengers with unparalleled control and
+        convenience during their journeys. With a focus on innovation,
+        usability, and aesthetics in automotive HMI, we are passionate about
+        creating outstanding user experiences for the automotive industry,
+        driving advancements in the field, and providing users with safer and
+        more convenient travel experiences. "
+      </div>
+      <div class="mp4 blurry-text">
+        <img src="./images/HMI/img1.jpg" alt="" />
+      </div>
+      <div class="txt1 blurry-text">
+        <p class="txt">
+          We specialize in developing bespoke Human-Machine Interface solutions
+          that cater to the unique needs of our clients.
+        </p>
+      </div>
+      <div class="image1">
+        <div class="overview">
+          <img src="./images/HMI/img2.jpg" alt="overview" />
+        </div>
+      </div>
+      <div class="txt3">
+        We aim to create immersive and intuitive interfaces that enhance user
+        experiences in automotive, aerospace, and consumer electronics domains.
+      </div>
+
+      <div class="img3">
+        <img src="./images/HMI/img4.jpg" alt="shop" />
+      </div>
+
+      <div class="img5">
+        <img src="./images/HMI/img3.jpg" alt="poster" />
+      </div>
+
+      <div class="txt4">
+        <p>
+          Brand Name: <br />
+          Category: <br />Designer:
+        </p>
+      </div>
+
+      <div class="txt5">
+        <p>"HMI"<br />"HMI Design"<br />"Su Ziyue"</p>
+      </div>
+
+      <div class="txt6">
+        <p class="blurry-text">
+          <a onclick="index()">WORK</a><br />
+          <a onclick="about()">ABOUT</a> <br />
+          <a onclick="contact()">CONTACT</a>
+        </p>
+      </div>
+
+      <div class="txt7">
+        <p class="text">
+          Feel free to explore my work and get in touch if you'd like to
+          collaborate or discuss potential design opportunities. Let's bring
+          your digital ideas to life together!
+        </p>
+
+        <img src="./images/footer.jpg" alt="" />
+      </div>
+    </div>
+    <!-- <script src="./js/console.js"></script> -->
+    <script src="./js/blurry-text.js"></script>
+    <script src="./js/menu.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        document.body.style.opacity = "1"; // 页面加载完成后，将不透明度设置为 1，触发淡入效果
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/console.css" />
+    <link rel="stylesheet" href="./css/hideScrollbar.css" />
+    <link rel="stylesheet" href="./css/blurry-text.css" />
+    <title>About - S&Design</title>
+    <link rel="icon" type="image/png" href="./images/S.png" />
+    <style>
+      body {
+        opacity: 0; /* 设置初始不透明度为 0 */
+        transition: opacity 1s ease-in-out; /* 添加淡入效果 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 鼠标样式 -->
+    <div id="g-pointer-1"></div>
+    <div id="g-pointer-2"></div>
+    <!-- 鼠标样式 -->
+
+    <div class="container">
+      <div class="txt">
+        <p class="top blurry-text">
+          <a id="openLink" style="text-decoration: none; color: #0cbe59"
+            >Feel free to explore my work and get in touch if you'd like to
+            collaborate or discuss potential design opportunities. Let's bring
+            your digital ideas to life together!</a
+          >
+        </p>
+      </div>
+
+      <div class="img1 blurry-text">
+        <p>
+          In the 'About' section, delve into the soul behind my artistic journey
+          and creations. This is more than a display of skills and
+          achievements;it's an intersection of personality and philosophy. My
+          story, from the initial inspiration to the realization in the real
+          world, shows how I transform dreams into tangible art.
+        </p>
+      </div>
+
+      <div class="txt2 blurry-text">
+        <p>How do you blend creativity into design?</p>
+        <hr />
+        <p>
+          <span
+            style="
+              font-size: 20px;
+              line-height: 20px;
+              font-family: Helvetica, sans-serif;
+              color: #2b2b2b;
+            "
+            >Creativity in my design process starts with extensive research and
+            brainstorming sessions. Over time, I've learned to blend traditional
+            design principles with modern techniques. For instance, I often use
+            digital tools for visualizations but rely on hand-drawing for
+            initial concepts. This evolution has allowed a more fluid and
+            adaptive design process.</span
+          >
+        </p>
+      </div>
+
+      <div class="txt3 blurry-text">
+        <p>What key elements make a design stand out?</p>
+        <hr />
+        <p>
+          <span
+            style="
+              font-size: 20px;
+              line-height: 20px;
+              font-family: Helvetica, sans-serif;
+              color: #2b2b2b;
+            "
+            >To me, three key elements make a design stand out: functionality,
+            simplicity, and emotional impact. A design must first serve its
+            purpose effectively. Simplicity in form and function ensures
+            longevity and adaptability. Lastly, a great design should evoke an
+            emotional response, connecting with the user on a deeper
+            level.</span
+          >
+        </p>
+      </div>
+
+      <div class="txt4 blurry-text">
+        <p>How do you balance functionality and aesthetics in your designs?</p>
+        <hr />
+        <p>
+          <span
+            style="
+              font-size: 20px;
+              line-height: 20px;
+              font-family: Helvetica, sans-serif;
+              color: #2b2b2b;
+            "
+            >Balancing functionality and aesthetics begins with understanding
+            the user's needs. I prioritize functionality, ensuring the design
+            performs its intended purpose. Then, I focus on aesthetics, using
+            elements like color, texture, and form to enhance the user
+            experience without compromising functionality.</span
+          >
+        </p>
+      </div>
+
+      <div class="txt5 blurry-text">
+        <p>How do you incorporate design trends into your work?</p>
+        <hr />
+        <p>
+          <span
+            style="
+              font-size: 20px;
+              line-height: 20px;
+              font-family: Helvetica, sans-serif;
+              color: #2b2b2b;
+            "
+            >I stay updated through design publications, online forums, and
+            attending industry events. While I'm aware of the latest trends, I
+            don't let them dictate my designs. Instead, I use them as
+            inspiration, adapting elements that align with my design philosophy
+            and the project's needs.</span
+          >
+        </p>
+      </div>
+
+      <div class="sen">
+        <hr />
+      </div>
+
+      <div class="txt7">
+        <p class="blurry-text">
+          <a href="https://twitter.com/ziyuesu3" target="_blank">TWITTER</a>
+          <a
+            href="https://instagram.com/sushietsu?igshid=OGQ5ZDc2ODk2ZA=="
+            target="_blank"
+            >INSTAGRAM</a
+          >
+          <a href="https://www.behance.net/shietsusu" target="_blank"
+            >BEHANCE</a
+          >
+        </p>
+      </div>
+
+      <div class="txt8">
+        <p>"© 2024 S&Design."</p>
+      </div>
+
+      <div class="txt6">
+        <p class="blurry-text" id="centered-element">
+          <a
+            onclick="index()"
+            style="color: #0cbe59; font-family: Helvetica, sans-serif"
+            >WORK</a
+          ><br />
+          <a
+            href="about.html"
+            style="
+              color: #0cbe59;
+              pointer-events: none;
+              font-family: Helvetica, sans-serif;
+            "
+            >ABOUT</a
+          >
+          <br />
+          <a
+            onclick="contact()"
+            style="color: #0cbe59; font-family: Helvetica, sans-serif"
+            >CONTACT</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="./js/console.js"></script>
+    <script src="./js/blurry-text.js"></script>
+    <script src="./js/downLoad.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        document.body.style.opacity = "1"; // 页面加载完成后，将不透明度设置为 1，触发淡入效果
+      });
+    </script>
+  </body>
+</html>

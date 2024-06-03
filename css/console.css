@@ -1,0 +1,32 @@
+/*鼠标样式*/
+/* * {
+  cursor: none;
+} */
+
+/* #g-pointer-1,
+#g-pointer-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: #999;
+  border-radius: 50%;
+  background-color: #ff0000;
+  mix-blend-mode: normal;
+  z-index: 100;
+  pointer-events: none;
+  cursor: none; */
+  /* transform: translate(-50%,-50%); */
+/* } */
+
+/* #g-pointer-2 {
+  width: 24px;
+  height: 24px;
+  background: #ff0000;
+  transition: .2s ease-out;
+  mix-blend-mode: darken;
+  z-index: 100;
+} */
+
+/*鼠标样式*/

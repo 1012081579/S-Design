@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Way Finding - S&Design</title>
+    <link rel="stylesheet" href="./css/sja.css" />
+    <link rel="stylesheet" href="./css/hideScrollbar.css" />
+    <link rel="stylesheet" href="./css/blurry-text.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="icon" type="image/png" href="./images/S.png" />
+    <style>
+      body {
+        opacity: 0; /* 设置初始不透明度为 0 */
+        transition: opacity 1s ease-in-out; /* 添加淡入效果 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 鼠标样式 -->
+    <div id="g-pointer-1"></div>
+    <div id="g-pointer-2"></div>
+    <!-- 鼠标样式 -->
+
+    <!-- menu -->
+    <div class="menu" id="menu">
+      <ul>
+        <li class="blurry-text"><a onclick="index()">BACK</a></li>
+        <li class="blurry-text"><a onclick="sja()">NEXT</a></li>
+      </ul>
+    </div>
+    <!-- menu -->
+
+    <div class="container">
+      <div class="title">
+        <span class="mainTitle blurry-text"> Way Finding </span><br />
+      </div>
+
+      <div class="first">
+        <img src="./images/wayFinding/first.png" alt="" />
+      </div>
+
+      <div class="subtitle blurry-text">
+        <span class="smTitle"
+          >"Navigate effortlessly, every step a discovery."</span
+        ><br /><br />
+        "Welcome to our cutting-edge wayfinding system, where innovation meets
+        accessibility. Our design philosophy blends dynamic creativity with
+        modern clarity, creating an intuitive navigation experience for all
+        users. At the heart of our system lies a unique fusion of handwritten
+        lines and sleek sans-serif fonts. The handwritten lines infuse a
+        personal touch, evoking warmth and individuality, while the sans-serif
+        fonts convey professionalism and reliability. This harmonious blend
+        strikes a balance between creativity and practicality, ensuring that our
+        system is not only visually engaging but also user-friendly and
+        approachable."
+        <br /><br />
+        "With our wayfinding system, navigating complex environments becomes a
+        seamless journey. Whether you're exploring urban landscapes or
+        navigating corporate campuses, our intuitive design ensures that every
+        step is guided with ease and precision."
+      </div>
+      <div class="mp4 blurry-text">
+        <img src="./images/wayFinding/img1.jpg" alt="" />
+      </div>
+      <div class="txt1 blurry-text">
+        <p class="txt">
+          At its core, our approach combines handwritten aesthetics with modern
+          sans-serif typography.
+        </p>
+      </div>
+      <div class="image1">
+        <div class="overview">
+          <img src="./images/wayFinding/img2.jpg" alt="overview" />
+        </div>
+      </div>
+      <div class="img2">
+        <img src="./images/wayFinding/img3.jpg" alt="Price list" />
+      </div>
+      <div class="txt3">
+        This fusion of analog and digital creates a sense of warmth and
+        authenticity while maintaining the efficiency and reliability of modern
+        technology.
+      </div>
+
+      <div class="img3">
+        <img src="./images/wayFinding/img4.jpg" alt="shop" />
+      </div>
+
+      <div class="txt4">
+        <p>
+          Brand Name: <br />
+          Category: <br />Designer:
+        </p>
+      </div>
+
+      <div class="txt5">
+        <p>"Way Finding"<br />"Spatial Design"<br />"Su Ziyue"</p>
+      </div>
+
+      <div class="txt6">
+        <p class="blurry-text">
+          <a onclick="index()">WORK</a><br />
+          <a onclick="about()">ABOUT</a> <br />
+          <a onclick="contact()">CONTACT</a>
+        </p>
+      </div>
+
+      <div class="txt7">
+        <p class="text">
+          Feel free to explore my work and get in touch if you'd like to
+          collaborate or discuss potential design opportunities. Let's bring
+          your digital ideas to life together!
+        </p>
+
+        <img src="./images/footer.jpg" alt="" />
+      </div>
+    </div>
+    <!-- <script src="./js/console.js"></script> -->
+    <script src="./js/blurry-text.js"></script>
+    <script src="./js/menu.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        document.body.style.opacity = "1"; // 页面加载完成后，将不透明度设置为 1，触发淡入效果
+      });
+    </script>
+  </body>
+</html>

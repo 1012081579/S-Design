@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commerce Flow - S&Design</title>
+    <link rel="stylesheet" href="./css/sja.css" />
+    <link rel="stylesheet" href="./css/hideScrollbar.css" />
+    <link rel="stylesheet" href="./css/blurry-text.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="icon" type="image/png" href="./images/S.png" />
+    <style>
+      body {
+        opacity: 0; /* 设置初始不透明度为 0 */
+        transition: opacity 1s ease-in-out; /* 添加淡入效果 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 鼠标样式 -->
+    <div id="g-pointer-1"></div>
+    <div id="g-pointer-2"></div>
+    <!-- 鼠标样式 -->
+
+    <!-- menu -->
+    <div class="menu" id="menu">
+      <ul>
+        <li class="blurry-text"><a onclick="index()">BACK</a></li>
+        <li class="blurry-text"><a onclick="book()">NEXT</a></li>
+      </ul>
+    </div>
+    <!-- menu -->
+
+    <div class="container">
+      <div class="title">
+        <span class="mainTitle blurry-text">
+          Comm <br />
+          -erce flow </span
+        ><br />
+      </div>
+
+      <div class="first">
+        <img src="./images/WEB/first.png" alt="" />
+      </div>
+
+      <div class="subtitle blurry-text">
+        <span class="smTitle">"Unleash Your E-commerce Management"</span
+        ><br /><br />
+        "In the digital era, e-commerce stands as the cornerstone of business
+        success. However, managing a bustling e-commerce backend can become
+        overwhelming. That's why we introduce Commerce Flow - a revolutionary
+        e-commerce backend management web page designed to unleash your business
+        potential, allowing you to focus on growth, innovation, and meeting
+        customer demands."
+        <br /><br />
+        "Commerce Flow provides comprehensive functionalities, integrating all
+        your e-commerce activities into one user-friendly platform. From
+        inventory management and order processing to customer service and sales
+        reporting, our system covers all your needs, enabling you to efficiently
+        manage your entire e-commerce operations in one place."
+      </div>
+      <div class="mp4 blurry-text">
+        <video
+          src="./images/WEB/v1.mp4"
+          loop
+          muted
+          playsinline
+          preload="metadata"
+          autoplay
+        ></video>
+      </div>
+      <div class="txt1 blurry-text">
+        <p class="txt">
+          Leverage Commerce Flow's intelligent tools to automate tedious tasks
+          and boost productivity. Smart inventory management ensures you always
+          stay on top of stock levels, avoiding shortages or excess.
+        </p>
+      </div>
+      <div class="image1">
+        <div class="overview">
+          <img src="./images/WEB/F1.jpg" alt="overview" />
+        </div>
+      </div>
+      <div class="img2">
+        <img src="./images/WEB/F3.jpg" alt="Price list" />
+      </div>
+      <div class="txt3">
+        Coffee is a beverage prepared from roasted coffee beans. Darkly colored,
+        bitter, and slightly acidic, coffee has a stimulating effect on humans,
+        primarily due to its caffeine content. It has the highest sales in the
+        world market for hot drinks.
+      </div>
+
+      <div class="img3">
+        <img src="./images/WEB/F2.jpg" alt="shop" />
+      </div>
+
+      <div class="img5">
+        <img src="./images/WEB/apo.jpg" alt="poster" />
+      </div>
+
+      <div class="txt4">
+        <p>
+          Brand Name: <br />
+          Category: <br />Designer:
+        </p>
+      </div>
+
+      <div class="txt5">
+        <p>"Commerce flow"<br />"WEB Design"<br />"Su Ziyue"</p>
+      </div>
+
+      <div class="txt6">
+        <p class="blurry-text">
+          <a onclick="index()">WORK</a><br />
+          <a onclick="about()">ABOUT</a> <br />
+          <a onclick="contact()">CONTACT</a>
+        </p>
+      </div>
+
+      <div class="txt7">
+        <p class="text">
+          Feel free to explore my work and get in touch if you'd like to
+          collaborate or discuss potential design opportunities. Let's bring
+          your digital ideas to life together!
+        </p>
+
+        <img src="./images/footer.jpg" alt="" />
+      </div>
+    </div>
+    <!-- <script src="./js/console.js"></script> -->
+    <script src="./js/blurry-text.js"></script>
+    <script src="./js/menu.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        document.body.style.opacity = "1"; // 页面加载完成后，将不透明度设置为 1，触发淡入效果
+      });
+    </script>
+  </body>
+</html>

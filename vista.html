@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vista Vision - S&Design</title>
+    <link rel="stylesheet" href="./css/sja.css" />
+    <link rel="stylesheet" href="./css/hideScrollbar.css" />
+    <link rel="stylesheet" href="./css/blurry-text.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="icon" type="image/png" href="./images/S.png" />
+    <style>
+      body {
+        opacity: 0; /* 设置初始不透明度为 0 */
+        transition: opacity 1s ease-in-out; /* 添加淡入效果 */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 鼠标样式 -->
+    <div id="g-pointer-1"></div>
+    <div id="g-pointer-2"></div>
+    <!-- 鼠标样式 -->
+
+    <!-- menu -->
+    <div class="menu" id="menu">
+      <ul>
+        <li class="blurry-text"><a onclick="index()">BACK</a></li>
+        <li class="blurry-text"><a onclick="hmi()">NEXT</a></li>
+      </ul>
+    </div>
+    <!-- menu -->
+
+    <div class="container">
+      <div class="title">
+        <span class="mainTitle blurry-text"> Vista Vision </span><br />
+      </div>
+
+      <div class="first">
+        <img src="./images/vistaVision/first.png" alt="" />
+      </div>
+
+      <div class="subtitle blurry-text">
+        <span class="smTitle">"A Journey into the Depths of Faith"</span
+        ><br /><br />
+        "VistaVision Labs is committed to advancing the forefront of artificial
+        intelligence visual technology. We bring together a team of scientists,
+        engineers, and innovators dedicated to developing cutting-edge visual
+        intelligence solutions to tackle the complex challenges of today's
+        world. Through advanced computer vision technology, our aim is to
+        achieve comprehensive understanding and application of visual data to
+        create greater value for businesses, organizations, and society.
+        Continuously pushing the boundaries of technology, our team is dedicated
+        to translating the latest research advancements into practical
+        commercial applications, helping clients innovate, enhance efficiency,
+        and gain competitive advantages."
+        <br /><br />
+        "Our core values lie in innovation, quality, and reliability. Whether in
+        autonomous driving, intelligent surveillance, medical imaging,
+        industrial inspection, or smart cities, VistaVision Labs' solutions
+        offer unprecedented opportunities and transformations for your
+        business."
+      </div>
+      <div class="mp4 blurry-text">
+        <img src="./images/vistaVision/img1.jpg" alt="" />
+      </div>
+      <div class="txt1 blurry-text">
+        <p class="txt">
+          Where design meets technology, sculpting tomorrow's visual landscape
+          with innovative solutions that redefine perception and inspire
+          creativity.
+        </p>
+      </div>
+      <div class="image1">
+        <div class="overview">
+          <img src="./images/vistaVision/img2.jpg" alt="overview" />
+        </div>
+      </div>
+      <div class="img2">
+        <img src="./images/vistaVision/img3.jpg" alt="Price list" />
+      </div>
+      <div class="txt3">
+        Explore the intersection of design and technology with VistaVision Labs,
+        where we pioneer visionary solutions to reshape the future of visual
+        experience.
+      </div>
+
+      <div class="img3">
+        <img src="./images/vistaVision/img4.jpg" alt="shop" />
+      </div>
+
+      <div class="img5">
+        <img src="./images/vistaVision/img5.jpg" alt="poster" />
+      </div>
+
+      <div class="txt4">
+        <p>
+          Brand Name: <br />
+          Category: <br />Designer:
+        </p>
+      </div>
+
+      <div class="txt5">
+        <p>"Vista Vision"<br />"VI Design"<br />"Su Ziyue"</p>
+      </div>
+
+      <div class="txt6">
+        <p class="blurry-text">
+          <a onclick="index()">WORK</a><br />
+          <a onclick="about()">ABOUT</a> <br />
+          <a onclick="contact()">CONTACT</a>
+        </p>
+      </div>
+
+      <div class="txt7">
+        <p class="text">
+          Feel free to explore my work and get in touch if you'd like to
+          collaborate or discuss potential design opportunities. Let's bring
+          your digital ideas to life together!
+        </p>
+
+        <img src="./images/footer.jpg" alt="" />
+      </div>
+    </div>
+    <!-- <script src="./js/console.js"></script> -->
+    <script src="./js/blurry-text.js"></script>
+    <script src="./js/menu.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        document.body.style.opacity = "1"; // 页面加载完成后，将不透明度设置为 1，触发淡入效果
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+@keyframes blurry-fade-in {
+    0% {
+      opacity: 0;
+      text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+      filter: blur(10px);
+    }
+    100% {
+      opacity: 1;
+      text-shadow: none;
+      filter: blur(0);
+    }
+  }
+  
+  .visible {
+    animation: blurry-fade-in 1s ease-in-out; /* 调整动画持续时间和缓动函数 */
+    animation-fill-mode: forwards; /* 使动画结束后保持最终状态 */
+    opacity: 0; /* 初始状态为透明 */
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* 添加模糊阴影 */
+    filter: blur(10px); /* 添加模糊效果 */
+  }
+  
+  a {
+    /* 初始状态下，字体正常 */
+    transition: filter 0.5s ease-in-out;
+    /* 添加过渡效果 */
+    filter: blur(0);
+  }
+  
+  a:hover {
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 720px) {
+  a:hover {
+    filter: blur(4px);
+    animation: none;
+  }
+}
+
+  /*例子: <p class="blurry-text">这是模糊浮现的文字。</p> */
