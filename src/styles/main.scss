@@ -16,6 +16,19 @@ $profile-orb-size: 110px;
   outline-offset: 7px;
 }
 
+@mixin glass-backdrop($value) {
+  -webkit-backdrop-filter: $value;
+  backdrop-filter: $value;
+
+  @supports (-webkit-backdrop-filter: blur(1px)) {
+    -webkit-backdrop-filter: $value;
+  }
+
+  @supports (backdrop-filter: blur(1px)) {
+    backdrop-filter: $value;
+  }
+}
+
 :root {
   --yellow: #907300;
   --paper: #f5f5f2;
@@ -186,8 +199,7 @@ button.random-hover:focus-visible {
     inset 0 1px 0 rgba(255, 255, 255, 0.62),
     inset 0 -1px 0 rgba(255, 255, 255, 0.2),
     0 12px 34px rgba(0, 0, 0, 0.06);
-  backdrop-filter: blur(38px) saturate(1.45);
-  -webkit-backdrop-filter: blur(38px) saturate(1.45);
+  @include glass-backdrop(blur(38px) saturate(1.45));
   font-size: 12px;
   font-weight: 400;
   line-height: 1;
@@ -1379,12 +1391,6 @@ body.religio-page {
   left: 0;
   right: 0;
   z-index: 100;
-  border-bottom: 0;
-  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.06);
-}
-
-.religio-page .utility-row {
-  gap: 0;
 }
 
 .detail-back {
@@ -1857,8 +1863,7 @@ body.religio-page {
     background:
       linear-gradient(135deg, rgba(255, 255, 255, 0.42), rgba(224, 224, 220, 0.2)),
       rgba(240, 240, 238, 0.9);
-    backdrop-filter: blur(32px) saturate(1.35);
-    -webkit-backdrop-filter: blur(32px) saturate(1.35);
+    @include glass-backdrop(blur(32px) saturate(1.35));
     height: auto;
     overflow: visible;
   }
