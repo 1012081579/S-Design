@@ -1,8 +1,6 @@
-import commerceFlowImage from "./commerceFlow.png";
 import lineGiftImage from "./lineGift.png";
 import oneStoneImage from "./onestone.png";
 import payluxImage from "./paylux.png";
-import pipeLinerImage from "./pipeLiner.png";
 import religioImage from "./religio.png";
 import sjaImage from "./SJA.png";
 import vvlImage from "./VVL.png";
@@ -149,6 +147,15 @@ const DATA = {
     {
       count: "1",
       label: "Work",
+      title: ["Line Gift", "UIUX"],
+      tags: [{ label: "U" }, { label: "2" }],
+      href: "Line Gift.html",
+      image: lineGiftImage,
+      variant: "extra",
+    },
+    {
+      count: "2",
+      label: "Work",
       title: ["Paylux", "UIUX"],
       tags: [{ label: "U" }, { label: "1" }],
       href: "Paylux.html",
@@ -156,7 +163,7 @@ const DATA = {
       variant: "strategy",
     },
     {
-      count: "2",
+      count: "3",
       label: "Work",
       title: ["SJA", "EXP"],
       tags: [{ label: "X" }, { label: "1" }],
@@ -165,7 +172,7 @@ const DATA = {
       variant: "brain",
     },
     {
-      count: "3",
+      count: "4",
       label: "Work",
       title: ["Religio", "Graphic"],
       tags: [{ label: "B" }, { label: "1" }],
@@ -174,44 +181,22 @@ const DATA = {
       variant: "extra",
     },
     {
-      count: "4",
+      count: "5",
       label: "Work",
       title: ["VVL", "VI"],
       tags: [{ label: "V" }, { label: "1" }],
+      href: "VVL.html",
       image: vvlImage,
       variant: "brain",
     },
     {
-      count: "5",
+      count: "6",
       label: "Work",
       title: ["One Stone", "Brand"],
       tags: [{ label: "V" }, { label: "2" }],
+      href: "OneStone.html",
       image: oneStoneImage,
       variant: "extra",
-    },
-    {
-      count: "6",
-      label: "Work",
-      title: ["CF", "System"],
-      tags: [{ label: "S" }, { label: "1" }],
-      image: commerceFlowImage,
-      variant: "brain",
-    },
-    {
-      count: "7",
-      label: "Work",
-      title: ["Line Gift", "UIUX"],
-      tags: [{ label: "U" }, { label: "2" }],
-      image: lineGiftImage,
-      variant: "extra",
-    },
-    {
-      count: "8",
-      label: "Work",
-      title: ["Pipeliner", "Product"],
-      tags: [{ label: "P" }, { label: "1" }],
-      image: pipeLinerImage,
-      variant: "brain",
     },
   ],
   categories: [
