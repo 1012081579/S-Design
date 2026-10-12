@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="src/sticker1_tab.png?v=1" />
 </head>
 
-<body class="religio-page">
+<body class="religio-page paylux-page">
   <div id="swup" class="transition-page">
     <div id="religio-progress" class="religio-progress" aria-hidden="true"></div>
 
@@ -76,7 +76,200 @@
           </article>
         </section>
 
-        <section class="religio-media-stack" aria-label="Paylux interface sequence">
+        <div class="paylux-research" lang="en" data-paylux-research>
+          <section class="px-section px-target" id="px-target" aria-labelledby="px-target-title">
+            <header class="px-heading">
+              <h2 class="detail-section-title" id="px-target-title">Target</h2>
+            </header>
+            <div class="px-target-grid">
+              <article class="px-target-card px-gender" aria-labelledby="px-gender-title">
+                <h3 class="px-chart-title" id="px-gender-title">Gender</h3>
+                <div class="px-donut-wrap">
+                  <svg class="px-donut" viewBox="0 0 320 320" role="img" aria-label="Gender distribution: 44% women, 56% men">
+                    <circle class="px-donut-track" cx="160" cy="160" r="121" />
+                    <circle class="px-donut-female" cx="160" cy="160" r="121" pathLength="100" stroke-dasharray="44 56" />
+                    <circle class="px-donut-male" cx="160" cy="160" r="121" pathLength="100" stroke-dasharray="56 44" stroke-dashoffset="-44" />
+                  </svg>
+                  <div class="px-donut-value" aria-hidden="true"><strong data-gender-value>100<span>%</span></strong><span data-gender-name>All users</span></div>
+                  <button class="px-legend px-legend-female" type="button" data-gender="female" aria-pressed="false"><i aria-hidden="true"></i>Women 44%</button>
+                  <button class="px-legend px-legend-male" type="button" data-gender="male" aria-pressed="false"><i aria-hidden="true"></i>Men 56%</button>
+                </div>
+              </article>
+              <article class="px-target-card px-age" aria-labelledby="px-age-title">
+                <h3 class="px-chart-title" id="px-age-title">Age</h3>
+                <div class="px-age-chart">
+                  <div class="px-age-plot">
+                  <svg viewBox="0 0 500 330" role="img" aria-label="Age distribution: ages 22–26 are the largest group at approximately 35%.">
+                    <defs><linearGradient id="px-age-fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#f69fba"/><stop offset="100%" stop-color="#fff7fa"/></linearGradient></defs>
+                    <g class="px-chart-grid"><path d="M55 18V294H490"/><path d="M55 87H490M55 156H490M55 225H490"/></g>
+                    <g class="px-chart-axis"><text x="0" y="24">40%</text><text x="0" y="93">30%</text><text x="0" y="162">20%</text><text x="0" y="231">10%</text><text x="12" y="300">0%</text></g>
+                    <path fill="url(#px-age-fill)" d="M55 197C87 204 116 187 136 152C173 83 206 50 241 55C279 60 310 106 344 173C373 232 410 241 490 248V294H55Z"/>
+                    <path class="px-age-line" d="M55 197C87 204 116 187 136 152C173 83 206 50 241 55C279 60 310 106 344 173C373 232 410 241 490 248"/>
+                    <circle class="px-age-point" data-age-point cx="241" cy="55" r="7"/>
+                  </svg>
+                    <p class="px-age-tooltip" data-age-caption aria-live="polite">Ages 22–26 · Our core audience</p>
+                  </div>
+                  <div class="px-age-options" role="group" aria-label="Select an age group">
+                    <button type="button" data-age="0" aria-pressed="false">18–22</button><button type="button" data-age="1" aria-pressed="true">22–26</button><button type="button" data-age="2" aria-pressed="false">26–30</button><button type="button" data-age="3" aria-pressed="false">30–34</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="px-section px-people" id="px-people" aria-labelledby="px-people-title">
+            <header class="px-heading">
+              <h2 class="detail-section-title" id="px-people-title">User analytics</h2>
+            </header>
+            <div class="px-personas">
+              <article class="px-persona px-persona-john">
+                <h3 class="px-persona-quote">Focus on clear navigation<br>and usability at every step.</h3>
+                <div class="px-persona-shell">
+                  <button class="px-persona-card" type="button" data-persona="john" aria-expanded="false" aria-controls="px-john-needs" aria-label="Explore John's needs">
+                    <span class="px-portrait"><img src="src/Paylux/research/john.webp" alt="John" loading="lazy" width="477" height="480"></span>
+                    <span class="px-persona-name">John <span>34</span></span>
+                    <span class="px-persona-job">Business professional</span>
+                    <span class="px-persona-needs" id="px-john-needs" hidden><span class="px-need-label">DESIGN FOCUS</span><strong>Less friction.<br>More speed.</strong><span>Clear navigation.<br>Intuitive search and sorting.</span></span>
+                    <span class="px-persona-saving"><span>Savings</span><span>High</span></span>
+                  </button>
+                  <p class="px-persona-description">Wants to find relevant events quickly, with simple navigation, sorting, and search.</p>
+                </div>
+              </article>
+              <article class="px-persona px-persona-emily">
+                <h3 class="px-persona-quote">Prioritize visual appeal<br>and explore new ways to interact.</h3>
+                <div class="px-persona-shell">
+                  <button class="px-persona-card" type="button" data-persona="emily" aria-expanded="false" aria-controls="px-emily-needs" aria-label="Explore Emily's needs">
+                    <span class="px-portrait"><img src="src/Paylux/research/emily.webp" alt="Emily" loading="lazy" width="479" height="480"></span>
+                    <span class="px-persona-name">Emily <span>26</span></span>
+                    <span class="px-persona-job">Freelancer</span>
+                    <span class="px-persona-needs" id="px-emily-needs" hidden><span class="px-need-label">DESIGN FOCUS</span><strong>Beautiful.<br>Personal.</strong><span>Customizable cards.<br>Feedback that feels right.</span></span>
+                    <span class="px-persona-saving"><span>Savings</span><span>Moderate</span></span>
+                  </button>
+                  <p class="px-persona-description">Values thoughtful interface design and fresh, engaging interactions.</p>
+                </div>
+              </article>
+              <article class="px-persona px-persona-misaki">
+                <h3 class="px-persona-quote">Make events feel relevant<br>with timely, engaging notifications.</h3>
+                <div class="px-persona-shell">
+                  <button class="px-persona-card" type="button" data-persona="misaki" aria-expanded="false" aria-controls="px-misaki-needs" aria-label="Explore Misaki's needs">
+                    <span class="px-portrait"><img src="src/Paylux/research/misaki.webp" alt="Misaki" loading="lazy" width="480" height="480"></span>
+                    <span class="px-persona-name"><span class="px-persona-first-name">Misaki</span><span>21</span></span>
+                    <span class="px-persona-job">Student</span>
+                    <span class="px-persona-needs" id="px-misaki-needs" hidden><span class="px-need-label">DESIGN FOCUS</span><strong>Never miss<br>a good find.</strong><span>Relevant notifications.<br>Stay connected with friends.</span></span>
+                    <span class="px-persona-saving"><span>Savings</span><span>Low</span></span>
+                  </button>
+                  <p class="px-persona-description">Often browses free events and promotions, and relies on notifications to discover new events.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="px-section px-journey" id="px-journey" aria-labelledby="px-journey-title">
+            <header class="px-heading">
+              <h2 class="detail-section-title" id="px-journey-title">User journey map</h2>
+            </header>
+            <div class="px-journey-scroll" tabindex="0" role="region" aria-label="User journey. Scroll horizontally on smaller screens.">
+              <div class="px-journey-map">
+                <span class="px-row-label">Stage</span>
+                <div class="px-steps" role="group" aria-label="Journey stages">
+                  <button type="button" data-step="0" aria-pressed="true"><span>Open Paylux</span></button>
+                  <button type="button" data-step="1" aria-pressed="false"><span>Manage assets</span></button>
+                  <button type="button" data-step="2" aria-pressed="false"><span>Send money</span></button>
+                  <button type="button" data-step="3" aria-pressed="false"><span>Account settings</span></button>
+                </div>
+                <span class="px-row-label">Action</span>
+                <div class="px-actions"><p><b>Log in</b> and view<br>an account overview</p><p><b>Check</b> balances<br>and transaction history</p><p><b>Send money</b><br>to someone</p><p>Move funds and<br><b>manage</b> passwords</p></div>
+                <span class="px-row-label px-emotion-label">Emotion</span>
+                <div class="px-emotion" role="img" aria-label="Emotional journey. Complex setup, limited guidance, long waits, repeated verification, and cumbersome transfers cause frustration. Completing the transaction restores confidence.">
+                  <div class="px-emotion-grid" aria-hidden="true"></div>
+                  <div class="px-emotion-art" aria-hidden="true"><img class="px-journey-fill" src="src/Paylux/research/journey-fill.svg" alt=""><img class="px-journey-line" src="src/Paylux/research/journey-line.svg" alt=""></div>
+                  <div class="px-journey-highlight" aria-hidden="true"></div>
+                  <span class="px-curve-note px-note-trust">Is it safe and reliable?</span>
+                  <span class="px-curve-note px-note-setup">Complex account<br>setup</span>
+                  <span class="px-curve-note px-note-guide">Limited guidance</span>
+                  <span class="px-curve-note px-note-wait">Long transaction waits</span>
+                  <span class="px-curve-note px-note-auth">Repeated payment verification</span>
+                  <span class="px-curve-note px-note-move">No one-click<br>fund transfers</span>
+                  <span class="px-curve-note px-note-done">Transaction complete</span>
+                </div>
+              </div>
+            </div>
+            <div class="px-journey-insight" aria-live="polite" aria-atomic="true">
+              <div><span class="px-insight-label">PAIN POINT</span><p data-step-pain>Account setup is complex, leaving users unsure about safety and reliability.</p></div>
+              <div><span class="px-insight-label">DESIGN OPPORTUNITY</span><p data-step-opportunity>Guide users step by step and explain security measures clearly.</p></div>
+            </div>
+          </section>
+
+          <section class="px-section px-solution" id="px-solution" aria-labelledby="px-solution-title">
+            <header class="px-heading">
+              <h2 class="detail-section-title" id="px-solution-title">Problem &amp; solution</h2>
+            </header>
+            <div class="px-solution-grid">
+              <article class="px-story-card px-problem-card">
+                <div class="px-story-top"><span class="px-story-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="14" cy="10" r="5"/><path d="M19 20c-8-7-17 5-8 7h5m8-11v10m-5-5h10"/></svg></span><span class="px-badge">PROBLEM</span></div>
+                <p>Limited visual appeal and weak social features held back user growth.</p>
+              </article>
+              <figure class="px-story-photo px-phone-photo"><img src="src/Paylux/research/phone.webp" alt="A person using a smartphone" loading="lazy" width="1600" height="661"><figcaption>FROM A TRANSACTION.</figcaption></figure>
+              <figure class="px-story-photo px-together-photo"><img src="src/Paylux/research/together.webp" alt="Friends gathered around a table, connecting through their phones" loading="lazy" width="1600" height="704"><figcaption>TO A CONNECTION.</figcaption></figure>
+              <article class="px-story-card px-answer-card">
+                <div class="px-story-top"><span class="px-story-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="16" cy="13" r="4"/><circle cx="6" cy="7" r="3"/><circle cx="26" cy="7" r="3"/><path d="M10 26c-6-8 18-8 12 0Zm-4-8c-8 0-5-6 0-6m20 6c8 0 5-6 0-6"/></svg></span><span class="px-badge">SOLUTION</span></div>
+                <p>Use personalization and user-centered design to strengthen social connections and engage younger users.</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="px-section px-social" id="px-social" aria-labelledby="px-social-title">
+            <header class="px-heading"><h2 class="detail-section-title" id="px-social-title">Social</h2></header>
+            <div class="px-social-layout">
+              <div class="px-social-phones"><article class="px-device px-contact-device" aria-label="Choose a contact"><div class="px-ui-screen"><div class="px-ui-status" aria-hidden="true"><span>10:41</span><div><img class="" src="src/Paylux/ui/e1ff6.svg" alt="" loading="lazy"><img class="" src="src/Paylux/ui/f6db5.svg" alt="" loading="lazy"><span class="px-ui-battery"><i></i><img class="" src="src/Paylux/ui/9c041.svg" alt="" loading="lazy"></span></div></div><div class="px-ui-contacts-content"><h3>Recent Contact</h3><div class="px-ui-recent"><button type="button" data-contact="allison" aria-label="Select Allison Anderson" aria-pressed="false"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" width="48" height="48" src="src/Paylux/ui/20e83.png" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/8b36d.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/b37c9.svg" alt="" loading="lazy"></span></button><button type="button" data-contact="andrew" aria-label="Select Andrew Adams" aria-pressed="false"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" width="48" height="48" src="src/Paylux/ui/20e83.png" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/8b36d.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/8c48f.svg" alt="" loading="lazy"></span></button><button type="button" data-contact="brian" aria-label="Select Brian Brown" aria-pressed="false"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" width="48" height="48" src="src/Paylux/ui/20e83.png" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/8b36d.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/230a4.svg" alt="" loading="lazy"></span></button><button type="button" data-contact="benjamin" aria-label="Select Space explorer" aria-pressed="false"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" width="48" height="48" src="src/Paylux/ui/20e83.png" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/8b36d.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/0df11.svg" alt="" loading="lazy"></span></button></div><div class="px-ui-list-heading"><h3>All Contact</h3><button type="button" class="px-ui-add" data-add-contact>Add<img class="" src="src/Paylux/ui/14f95.svg" alt="" loading="lazy"></button></div><div class="px-ui-contact-scroll"><div class="px-ui-contact-group px-ui-group-a"><h4>A</h4><img class="px-ui-divider" src="src/Paylux/ui/c0e07.svg" alt="" loading="lazy"><button type="button" class="px-ui-contact-row" data-contact="allison" aria-pressed="false"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" src="src/Paylux/ui/e91a7.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/b37c9.svg" alt="" loading="lazy"></span><span><strong>Allison Anderson</strong><small>AAnderson@gmail.com</small></span></button><button type="button" class="px-ui-contact-row" data-contact="andrew" aria-pressed="false"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" src="src/Paylux/ui/e91a7.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/8c48f.svg" alt="" loading="lazy"></span><span><strong>Andrew Adams</strong><small>AAdams@gmail.com</small></span></button></div><div class="px-ui-contact-group px-ui-group-b"><h4>B</h4><img class="px-ui-divider" src="src/Paylux/ui/c0e07.svg" alt="" loading="lazy"><button type="button" class="px-ui-contact-row" data-contact="barbara" aria-pressed="false"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" src="src/Paylux/ui/e91a7.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/b6d0f.svg" alt="" loading="lazy"></span><span><strong>Barbara Baker</strong><small>Baker@gmail.com</small></span></button><button type="button" class="px-ui-contact-row" data-contact="benjamin" aria-pressed="false"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" src="src/Paylux/ui/e91a7.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/ee93e.svg" alt="" loading="lazy"></span><span><strong>Benjamin Brooks</strong><small>Brooks@gmail.com</small></span></button><button type="button" class="px-ui-contact-row" data-contact="brian" aria-pressed="false"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" src="src/Paylux/ui/e91a7.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/230a4.svg" alt="" loading="lazy"></span><span><strong>Brian Brown</strong><small>Brown@gmail.com</small></span></button></div><div class="px-ui-contact-group px-ui-group-c"><h4>C</h4><img class="px-ui-divider" src="src/Paylux/ui/c0e07.svg" alt="" loading="lazy"></div></div></div><nav class="px-ui-nav" aria-label="Preview navigation"><button type="button" data-preview-screen="wallet" class="" aria-label="Show home preview"><img class="" src="src/Paylux/ui/e224b.svg" alt="" loading="lazy"></button><button type="button" data-preview-screen="contacts" class="is-current" aria-label="Show contacts preview"><img class="" src="src/Paylux/ui/f99e8.svg" alt="" loading="lazy"></button><button type="button" data-preview-screen="receipts" class="" aria-label="Show activity preview"><img class="" src="src/Paylux/ui/fc0d5.svg" alt="" loading="lazy"></button></nav><div class="px-ui-contact-picker" data-contact-picker hidden><div><h3>Choose a contact</h3><button type="button" data-close-picker aria-label="Close contact picker">×</button></div><button type="button" data-contact="allison"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" src="src/Paylux/ui/e91a7.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/b37c9.svg" alt="" loading="lazy"></span><span>Allison Anderson</span></button><button type="button" data-contact="andrew"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" src="src/Paylux/ui/e91a7.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/8c48f.svg" alt="" loading="lazy"></span><span>Andrew Adams</span></button><button type="button" data-contact="barbara"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" src="src/Paylux/ui/e91a7.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/b6d0f.svg" alt="" loading="lazy"></span><span>Barbara Baker</span></button><button type="button" data-contact="benjamin"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" src="src/Paylux/ui/e91a7.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/ee93e.svg" alt="" loading="lazy"></span><span>Benjamin Brooks</span></button><button type="button" data-contact="brian"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" src="src/Paylux/ui/e91a7.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/230a4.svg" alt="" loading="lazy"></span><span>Brian Brown</span></button></div></div></article><article class="px-device px-transfer-device" aria-label="Confirm a demo transfer"><div class="px-ui-screen"><div class="px-ui-transfer-background" aria-hidden="true" inert><div class="px-ui-status" aria-hidden="true"><span>10:41</span><div><img class="" src="src/Paylux/ui/e1ff6.svg" alt="" loading="lazy"><img class="" src="src/Paylux/ui/f6db5.svg" alt="" loading="lazy"><span class="px-ui-battery"><i></i><img class="" src="src/Paylux/ui/9c041.svg" alt="" loading="lazy"></span></div></div><div class="px-ui-contacts-content"><h3>Recent Contact</h3><div class="px-ui-recent"><span type="button" data-contact="allison" aria-label="Select Allison Anderson" aria-pressed="false"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" width="48" height="48" src="src/Paylux/ui/20e83.png" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/8b36d.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/b37c9.svg" alt="" loading="lazy"></span></span><span type="button" data-contact="andrew" aria-label="Select Andrew Adams" aria-pressed="false"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" width="48" height="48" src="src/Paylux/ui/20e83.png" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/8b36d.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/8c48f.svg" alt="" loading="lazy"></span></span><span type="button" data-contact="brian" aria-label="Select Brian Brown" aria-pressed="false"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" width="48" height="48" src="src/Paylux/ui/20e83.png" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/8b36d.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/230a4.svg" alt="" loading="lazy"></span></span><span type="button" data-contact="benjamin" aria-label="Select Space explorer" aria-pressed="false"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" width="48" height="48" src="src/Paylux/ui/20e83.png" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/8b36d.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/0df11.svg" alt="" loading="lazy"></span></span></div><div class="px-ui-list-heading"><h3>All Contact</h3><span type="button" class="px-ui-add" data-add-contact>Add<img class="" src="src/Paylux/ui/14f95.svg" alt="" loading="lazy"></span></div><div class="px-ui-contact-scroll"><div class="px-ui-contact-group px-ui-group-a"><h4>A</h4><img class="px-ui-divider" src="src/Paylux/ui/c0e07.svg" alt="" loading="lazy"><span type="button" class="px-ui-contact-row" data-contact="allison" aria-pressed="false"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" src="src/Paylux/ui/e91a7.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/b37c9.svg" alt="" loading="lazy"></span><span><strong>Allison Anderson</strong><small>AAnderson@gmail.com</small></span></span><span type="button" class="px-ui-contact-row" data-contact="andrew" aria-pressed="false"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" src="src/Paylux/ui/e91a7.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/8c48f.svg" alt="" loading="lazy"></span><span><strong>Andrew Adams</strong><small>AAdams@gmail.com</small></span></span></div><div class="px-ui-contact-group px-ui-group-b"><h4>B</h4><img class="px-ui-divider" src="src/Paylux/ui/c0e07.svg" alt="" loading="lazy"><span type="button" class="px-ui-contact-row" data-contact="barbara" aria-pressed="false"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" src="src/Paylux/ui/e91a7.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/b6d0f.svg" alt="" loading="lazy"></span><span><strong>Barbara Baker</strong><small>Baker@gmail.com</small></span></span><span type="button" class="px-ui-contact-row" data-contact="benjamin" aria-pressed="false"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" src="src/Paylux/ui/e91a7.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/ee93e.svg" alt="" loading="lazy"></span><span><strong>Benjamin Brooks</strong><small>Brooks@gmail.com</small></span></span><span type="button" class="px-ui-contact-row" data-contact="brian" aria-pressed="false"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" src="src/Paylux/ui/e91a7.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" src="src/Paylux/ui/230a4.svg" alt="" loading="lazy"></span><span><strong>Brian Brown</strong><small>Brown@gmail.com</small></span></span></div><div class="px-ui-contact-group px-ui-group-c"><h4>C</h4><img class="px-ui-divider" src="src/Paylux/ui/c0e07.svg" alt="" loading="lazy"></div></div></div></div><div class="px-ui-shade"></div><form class="px-ui-transfer-sheet" data-transfer-form><span class="px-ui-handle"></span><h3>Confirm Transfer</h3><label class="px-ui-amount"><span class="px-ui-amount-input"><img src="src/Paylux/ui/5bb0e.svg" alt="" aria-hidden="true"><input name="amount" type="number" min="1" max="5000" step="0.01" value="800.00" required inputmode="decimal" aria-label="Demo transfer amount in US dollars"></span><span>Amount</span></label><div class="px-ui-recipient"><span class="px-ui-avatar"><img class="px-ui-avatar-ring" src="src/Paylux/ui/a04f2.svg" alt="" loading="lazy"><img class="px-ui-avatar-art" data-recipient-avatar src="src/Paylux/ui/37c33.svg" alt="" loading="lazy"></span><strong data-recipient-name>Barbara Baker</strong><small data-recipient-email>Baker@gmail.com</small></div><input type="hidden" name="note" value="Dinner"><button type="submit" class="px-ui-continue">Continue</button><span class="px-ui-form-status" data-transfer-status role="status"></span></form></div></article><article class="px-device px-receipt-device" aria-label="Demo payment receipts"><div class="px-ui-screen"><div class="px-ui-status" aria-hidden="true"><span>10:41</span><div><img class="" src="src/Paylux/ui/e1ff6.svg" alt="" loading="lazy"><img class="" src="src/Paylux/ui/f6db5.svg" alt="" loading="lazy"><span class="px-ui-battery"><i></i><img class="" src="src/Paylux/ui/9c041.svg" alt="" loading="lazy"></span></div></div><div class="px-ui-receipt-toolbar"><button type="button" data-preview-screen="transfer" aria-label="Back to transfer"><img class="" src="src/Paylux/ui/90d25.svg" alt="" loading="lazy"></button><button type="button" data-receipt-menu aria-label="Toggle receipt details" aria-expanded="false"><img class="" src="src/Paylux/ui/60510.svg" alt="" loading="lazy"></button></div><div class="px-ui-previous-receipt"><dl><div><dt>Card Number</dt><dd>**** 5728</dd></div><div><dt>Payee</dt><dd>Andrew Adams</dd></div></dl></div><time class="px-ui-receipt-time">1:20 PM</time><div class="px-ui-receipt"><h3>Payment Receipt</h3><img class="px-ui-divider" src="src/Paylux/ui/c0e07.svg" alt="" loading="lazy"><span class="px-ui-amount-label">Amount</span><strong class="px-ui-receipt-amount"><img src="src/Paylux/ui/be95a.svg" alt="$"><span>492.00</span></strong><details class="px-ui-receipt-details"><summary>Details<img class="" src="src/Paylux/ui/06d5e.svg" alt="" loading="lazy"></summary><span>Demo payment · Shopping</span></details><dl><div><dt>Payment Method</dt><dd>Credit Card</dd></div><div><dt>Card Number</dt><dd>**** 5728</dd></div><div><dt>Payee</dt><dd>Brian Brown</dd></div></dl></div><time class="px-ui-receipt-time">2:27PM</time><div class="px-ui-receipt px-live-receipt" data-receipt-state="ready"><h3>Payment Receipt</h3><img class="px-ui-divider" src="src/Paylux/ui/c0e07.svg" alt="" loading="lazy"><span class="px-ui-amount-label">Amount</span><strong class="px-ui-receipt-amount"><img src="src/Paylux/ui/be95a.svg" alt="$"><span data-receipt-amount>800.00</span></strong><details class="px-ui-receipt-details"><summary>Details<img class="" src="src/Paylux/ui/06d5e.svg" alt="" loading="lazy"></summary><span data-receipt-note>Demo payment · Dinner</span></details><dl><div><dt>Payment Method</dt><dd>Credit Card</dd></div><div><dt>Card Number</dt><dd>**** 5728</dd></div><div><dt>Payee</dt><dd data-receipt-name>Barbara Baker</dd></div></dl></div><img class="px-ui-home-indicator" src="src/Paylux/ui/b75b4.svg" alt="" loading="lazy"></div></article></div>
+              <aside class="px-social-story" aria-label="Social payment features">
+                <div class="px-connect-card"><h3>Connect</h3><div class="px-connect-avatars" role="group" aria-label="Connect with a friend"><button class="px-contact-avatar" type="button" data-contact="allison" aria-label="Select Allison Anderson" aria-pressed="false"><img src="src/Paylux/ui/b37c9.svg" alt="" loading="lazy" width="48" height="48"></button><button class="px-contact-avatar" type="button" data-contact="andrew" aria-label="Select Andrew Adams" aria-pressed="false"><img src="src/Paylux/ui/8c48f.svg" alt="" loading="lazy" width="48" height="48"></button><button class="px-contact-avatar" type="button" data-contact="barbara" aria-label="Select Barbara Baker" aria-pressed="true"><img src="src/Paylux/ui/b6d0f.svg" alt="" loading="lazy" width="48" height="48"></button><button class="px-contact-avatar" type="button" data-contact="brian" aria-label="Select Brian Brown" aria-pressed="false"><img src="src/Paylux/ui/230a4.svg" alt="" loading="lazy" width="48" height="48"></button></div></div>
+                <div class="px-transfer-story"><div class="px-transfer-tile"><h3>Transfer</h3><span data-story-recipient>Barbara Baker</span></div><div class="px-amount-bubble" data-story-amount>$800.00</div><span class="px-note-bubble" data-story-note>Dinner</span></div>
+                <button class="px-start-card" type="button" data-start-transfer aria-label="Start a new demo transfer"><strong>Let’s start</strong><span>PAYLUX</span></button>
+              </aside>
+            </div>
+          </section>
+
+          <section class="px-section px-card-design" id="px-card-design" aria-labelledby="px-card-design-title">
+            <header class="px-heading"><h2 class="detail-section-title" id="px-card-design-title">Card design</h2></header>
+            <div class="px-card-gallery">
+              <div class="px-card-options px-card-options-left" role="group" aria-label="Vibrant and green card designs">
+                <button class="px-bank-card" data-theme="pulse" type="button" data-card-theme="pulse" aria-label="Preview Pulse card design" aria-pressed="false">
+                  <span class="px-card-art" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                  <span class="px-card-top"><span>**** 5728</span><strong>VISA</strong></span>
+                  <span class="px-card-balance"><span>$</span>43,768.50</span>
+                  <span class="px-card-bottom"><span class="px-ui-sr-only">Pulse</span><span>2:37PM</span></span>
+                </button>
+                <button class="px-bank-card" data-theme="mint" type="button" data-card-theme="mint" aria-label="Preview Mint card design" aria-pressed="false">
+                  <span class="px-card-art" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                  <span class="px-card-top"><span>**** 5728</span><strong>VISA</strong></span>
+                  <span class="px-card-balance"><span>$</span>43,768.50</span>
+                  <span class="px-card-bottom"><span class="px-ui-sr-only">Mint</span><span>2:37PM</span></span>
+                </button>
+              </div>
+<article class="px-device px-wallet-device" aria-label="Live card design preview"><div class="px-ui-screen"><div class="px-ui-status" aria-hidden="true"><span>10:41</span><div><img class="" src="src/Paylux/ui/e1ff6.svg" alt="" loading="lazy"><img class="" src="src/Paylux/ui/f6db5.svg" alt="" loading="lazy"><span class="px-ui-battery"><i></i><img class="" src="src/Paylux/ui/9c041.svg" alt="" loading="lazy"></span></div></div><div class="px-bank-card px-ui-wallet-card" data-theme="mono" data-card-preview role="img" aria-label="Mono card preview, balance $43,768.50"><span class="px-card-art" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="px-ui-card-arc" aria-hidden="true"><img class="" src="src/Paylux/ui/a61f2.svg" alt="" loading="lazy"><img class="" src="src/Paylux/ui/e7831.svg" alt="" loading="lazy"><img class="" src="src/Paylux/ui/1f484.svg" alt="" loading="lazy"><img class="" src="src/Paylux/ui/4d0d6.svg" alt="" loading="lazy"></span><span class="px-card-top"><span>**** 5728</span><img class="px-ui-visa" src="src/Paylux/ui/92f53.svg" alt="" loading="lazy"></span><span class="px-card-balance"><img class="" src="src/Paylux/ui/43ecd.svg" alt="" loading="lazy">43,768.50</span><span class="px-card-bottom"><span class="px-ui-sr-only">Mono</span><span>2:37PM</span></span></div><div class="px-card-dots" role="group" aria-label="Select a card design"><button type="button" data-card-theme="arc" aria-label="Arc card" aria-pressed="false"></button><button type="button" data-card-theme="mono" aria-label="Mono card" aria-pressed="true"></button><button type="button" data-card-theme="pulse" aria-label="Pulse card" aria-pressed="false"></button><button type="button" data-card-theme="mint" aria-label="Mint card" aria-pressed="false"></button><button type="button" data-card-theme="prism" aria-label="Prism card" aria-pressed="false"></button><button type="button" data-card-theme="tide" aria-label="Tide card" aria-pressed="false"></button></div><div class="px-ui-transactions"><header><h3>Latest Transactions</h3><button type="button" class="px-ui-view-more" data-view-transactions aria-expanded="false">view more</button></header><div class="px-ui-transaction-scroll" tabindex="0" aria-label="Transaction history"><div class="px-ui-transaction"><span class="px-ui-merchant"><img class="" src="src/Paylux/ui/1af8e.svg" alt="" loading="lazy"></span><span class="px-ui-transaction-label"><strong>Nike</strong><span class="px-ui-category">Sport</span></span><span class="px-ui-transaction-amount"><strong><img class="" src="src/Paylux/ui/cdcea.svg" alt="" loading="lazy">247.2</strong><small>1:45 PM</small></span></div><div class="px-ui-transaction"><span class="px-ui-merchant"><img class="" src="src/Paylux/ui/d6cfc.svg" alt="" loading="lazy"></span><span class="px-ui-transaction-label"><strong>McDonald's</strong><span class="px-ui-category">Food</span></span><span class="px-ui-transaction-amount"><strong><img class="" src="src/Paylux/ui/cdcea.svg" alt="" loading="lazy">17</strong><small>9:27 AM</small></span></div><div class="px-ui-transaction"><span class="px-ui-merchant"><img class="" src="src/Paylux/ui/468b3.svg" alt="" loading="lazy"></span><span class="px-ui-transaction-label"><strong>Apple TV</strong><span class="px-ui-category">Application</span></span><span class="px-ui-transaction-amount"><strong><img class="" src="src/Paylux/ui/cdcea.svg" alt="" loading="lazy">6</strong><small>Yesterday</small></span></div><div class="px-ui-transaction"><span class="px-ui-merchant"><img class="" src="src/Paylux/ui/8957b.svg" alt="" loading="lazy"></span><span class="px-ui-transaction-label"><strong>YouTube</strong><span class="px-ui-category">Application</span></span><span class="px-ui-transaction-amount"><strong><img class="" src="src/Paylux/ui/cdcea.svg" alt="" loading="lazy">3</strong><small>Yesterday</small></span></div><div class="px-ui-transaction"><span class="px-ui-merchant"><img class="" src="src/Paylux/ui/6f705.svg" alt="" loading="lazy"></span><span class="px-ui-transaction-label"><strong>PayPal</strong><span class="px-ui-category">Application</span></span><span class="px-ui-transaction-amount"><strong><img class="" src="src/Paylux/ui/cdcea.svg" alt="" loading="lazy">26</strong><small>Yesterday</small></span></div><div class="px-ui-transaction"><span class="px-ui-merchant"><img class="" src="src/Paylux/ui/468b3.svg" alt="" loading="lazy"></span><span class="px-ui-transaction-label"><strong>Apple TV</strong><span class="px-ui-category">Application</span></span><span class="px-ui-transaction-amount"><strong><img class="" src="src/Paylux/ui/cdcea.svg" alt="" loading="lazy">8</strong><small>Yesterday</small></span></div><div class="px-ui-transaction"><span class="px-ui-merchant"><img class="" src="src/Paylux/ui/d6cfc.svg" alt="" loading="lazy"></span><span class="px-ui-transaction-label"><strong>McDonald's</strong><span class="px-ui-category">Food</span></span><span class="px-ui-transaction-amount"><strong><img class="" src="src/Paylux/ui/cdcea.svg" alt="" loading="lazy">4</strong><small>9:27 AM</small></span></div></div></div><span class="px-ui-sr-only" aria-live="polite" data-card-selection>Mono</span></div></article>
+              <div class="px-card-options px-card-options-right" role="group" aria-label="Colorful and blue card designs">
+                <button class="px-bank-card" data-theme="prism" type="button" data-card-theme="prism" aria-label="Preview Prism card design" aria-pressed="false">
+                  <span class="px-card-art" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                  <span class="px-card-top"><span>**** 5728</span><strong>VISA</strong></span>
+                  <span class="px-card-balance"><span>$</span>43,768.50</span>
+                  <span class="px-card-bottom"><span class="px-ui-sr-only">Prism</span><span>2:37PM</span></span>
+                </button>
+                <button class="px-bank-card" data-theme="tide" type="button" data-card-theme="tide" aria-label="Preview Tide card design" aria-pressed="false">
+                  <span class="px-card-art" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+                  <span class="px-card-top"><span>**** 5728</span><strong>VISA</strong></span>
+                  <span class="px-card-balance"><span>$</span>43,768.50</span>
+                  <span class="px-card-bottom"><span class="px-ui-sr-only">Tide</span><span>2:37PM</span></span>
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <section class="religio-media-stack" id="px-interfaces" aria-labelledby="px-interfaces-title">
+          <header class="px-heading px-interface-heading">
+            <h2 class="detail-section-title" id="px-interfaces-title">Interface design</h2>
+          </header>
           <figure class="religio-media-block" data-reveal="media">
             <img src="src/Paylux/2.jpg" alt="Paylux credit card dashboard interface" />
           </figure>

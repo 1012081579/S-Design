@@ -4,7 +4,9 @@ import SwupHeadPlugin from "@swup/head-plugin";
 
 import { initHomePage } from "./main";
 import { initReligioPage } from "./religio";
+import { initPayluxResearch, destroyPayluxResearch } from "./paylux";
 import "./styles/main.scss";
+import "./styles/paylux.scss";
 
 const initCurrentPage = (): void => {
   if (document.querySelector(".app-grid")) {
@@ -14,6 +16,8 @@ const initCurrentPage = (): void => {
   if (document.querySelector(".religio-detail")) {
     initReligioPage();
   }
+
+  initPayluxResearch();
 };
 
 const swup = new Swup({
@@ -29,4 +33,5 @@ const swup = new Swup({
 });
 
 initCurrentPage();
+swup.hooks.before("content:replace", destroyPayluxResearch);
 swup.hooks.on("page:view", initCurrentPage);

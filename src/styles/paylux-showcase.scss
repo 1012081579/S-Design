@@ -1,0 +1,246 @@
+// Product demonstrations share the typography, spacing and palette of the research.
+.px-social-layout { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 1.15fr); gap: clamp(24px, 3vw, 56px); align-items: stretch; }
+.px-social-phones { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(16px, 2vw, 36px); min-width: 0; align-items: start; }
+.px-social-story { display: flex; flex-direction: column; gap: 6%; min-width: 0;
+  h3 { margin: 0; font-size: clamp(22px, 2.4vw, 46px); font-weight: 500; letter-spacing: -.025em; }
+}
+.px-connect-card { padding: 9%; border-radius: 24px; background: linear-gradient(100deg, #e3dfe1, #f4e8ee, #e5e3e4); }
+.px-connect-avatars { display: flex; align-items: center; margin-top: 25%; gap: 5%; .px-contact-avatar { flex-basis: 21%; } }
+.px-transfer-story { position: relative; padding-bottom: 31%; margin-top: auto; }
+.px-transfer-tile { display: flex; flex-direction: column; justify-content: space-between; gap: 60px; width: 88%; padding: 8%; border-radius: 24px; background: #ff5664; color: #fff; > span { font-size: clamp(12px, 1vw, 18px); } }
+.px-amount-bubble { position: absolute; right: -2%; bottom: 20%; padding: 7% 9%; border-radius: 24px; background: #f5b6f8; color: #f32772; font-size: clamp(21px, 2.2vw, 42px); font-weight: 500; }
+.px-note-bubble { position: absolute; bottom: 5%; left: 8%; max-width: 85%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 8px 18px; border-radius: 20px; background: #faffb1; color: #82783d; font-size: clamp(12px, .95vw, 18px); }
+.px-start-card { display: flex; flex-direction: column; justify-content: space-between; gap: 60px; width: 100%; padding: 9%; border: 0; border-radius: 26px; color: #fff; background: linear-gradient(120deg, #ff0b91, #f83c42); text-align: left; transition: transform 250ms, filter 250ms;
+  strong { font-size: clamp(24px, 2.8vw, 50px); font-weight: 500; }
+  > span { font-size: 11px; letter-spacing: .05em; }
+  &:hover, &:focus-visible { filter: saturate(1.3); transform: translateY(-4px); }
+}
+
+.px-card-gallery { display: grid; grid-template-columns: 1fr 1.08fr 1fr; gap: clamp(20px, 2.8vw, 54px); align-items: start; }
+.px-card-options { padding-top: 19.3846%; display: grid; gap: clamp(20px, 2vw, 38px); min-width: 0; }
+.px-bank-card {
+  --card-ink: #fff;
+  --card-background: linear-gradient(125deg, #ee1843, #6435a7);
+  position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: space-between;
+  width: 100%; aspect-ratio: 1.79; padding: 5% 6%; border: 0; border-radius: clamp(16px, 1.5vw, 28px);
+  background: var(--card-background); color: var(--card-ink); overflow: hidden; text-align: left;
+  font-family: Arial, sans-serif; box-shadow: 0 14px 34px #bc2c6410;
+  transition: transform 280ms, box-shadow 280ms;
+}
+button.px-bank-card:hover { transform: translateY(-5px); box-shadow: 0 18px 40px #bc2c6420; }
+button.px-bank-card[aria-pressed="true"] { box-shadow: 0 16px 40px #bc2c6420; }
+.px-card-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: clamp(12px, 1.35vw, 25px); letter-spacing: .02em;
+  strong { font-style: italic; font-size: 1.65em; line-height: 1; letter-spacing: -.07em; font-weight: 900; }
+}
+.px-card-balance { display: flex; justify-content: center; align-items: baseline; gap: 6px; font-size: clamp(22px, 2.7vw, 51px); font-weight: 500; letter-spacing: -.035em; white-space: nowrap; > span { font-weight: 300; font-size: .87em; } }
+.px-card-bottom { display: flex; justify-content: space-between; align-items: end; gap: 8px; font-size: clamp(10px, 1vw, 19px); > span:first-child { font-size: .65em; letter-spacing: .12em; text-transform: uppercase; } }
+.px-card-art { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none;
+  i { position: absolute; display: block; }
+}
+// Decorative card artwork stays separate from selectable HTML content.
+@each $theme in pulse, mint, prism, tide, mono {
+  .px-bank-card[data-theme="#{$theme}"] .px-card-art {
+    background: url("../Paylux/cards/#{$theme}.svg") center / cover no-repeat;
+    i { display: none; }
+  }
+}
+.px-bank-card[data-theme="mono"] { --card-background: #fff; --card-ink: #080808; }
+.px-card-dots { display: flex; justify-content: center; gap: 7px; padding: 4% 0;
+  button { position: relative; width: 5px; height: 5px; padding: 0; border: 0; background: #666; border-radius: 8px; transition: width 200ms, background 200ms;
+    &::after { content: ''; position: absolute; inset: -8px -3px; }
+    &[aria-pressed="true"] { width: 18px; background: #ded1d8; }
+  }
+}
+@media (max-width: 1100px) {
+  .px-social-layout { grid-template-columns: 1fr; gap: 32px; }
+  .px-social-phones { gap: 24px; max-width: 900px; width: 100%; margin-inline: auto; }
+  .px-social-story { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; align-items: start; }
+  .px-social-story h3 { font-size: 26px; }
+  .px-connect-avatars { margin-top: 35px; }
+  .px-transfer-story { margin: 0; padding-bottom: 65px; }
+  .px-transfer-tile { gap: 35px; }
+  .px-start-card { gap: 60px; strong { font-size: 30px; } }
+  .px-card-gallery { gap: 20px; }
+}
+@media (max-width: 760px) {
+  .px-social-phones { grid-template-columns: repeat(3, 260px); overflow-x: auto; scroll-snap-type: x proximity; padding: 6px 8px 18px; margin: -6px -8px 0; width: calc(100% + 16px); scrollbar-width: thin; scrollbar-color: #f4adc9 #fbfbf9; }
+  .px-social-phones > .px-device { scroll-snap-align: center; border-radius: 36px; }
+  .px-social-story { gap: 12px; }
+  .px-social-story h3 { font-size: 22px; }
+  .px-connect-card { border-radius: 18px; }
+  .px-connect-avatars { gap: 3%; flex-wrap: wrap; row-gap: 12px; .px-contact-avatar { flex-basis: 45%; } }
+  .px-transfer-tile { width: 100%; padding: 12%; border-radius: 18px; gap: 35px; }
+  .px-transfer-story { padding-bottom: 80px; }
+  .px-amount-bubble { padding: 12px; bottom: 35px; font-size: 18px; border-radius: 16px; }
+  .px-note-bubble { left: 0; max-width: 100%; font-size: 11px; padding: 7px 12px; }
+  .px-start-card { border-radius: 18px; gap: 68px; padding: 12%; strong { font-size: 22px; } > span { font-size: 9px; } }
+  .px-card-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 16px; }
+  .px-wallet-device { grid-column: 1 / -1; grid-row: 1; width: min(100%, 360px); justify-self: center; }
+  .px-bank-card { border-radius: 16px; }
+  .px-card-top { font-size: clamp(10px, 2.3vw, 16px); }
+  .px-card-balance { font-size: clamp(17px, 4.4vw, 30px); }
+  .px-card-bottom { font-size: clamp(9px, 1.8vw, 13px); }
+}
+@media (max-width: 420px) {
+  .px-social-story { grid-template-columns: 1fr 1fr; }
+  .px-start-card { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: 20px; padding: 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  button.px-bank-card:hover, .px-start-card:hover, .px-start-card:focus-visible, .px-contact-avatar:hover, .px-contact-avatar[aria-pressed="true"] { transform: none; }
+}
+
+// The UI inside each device uses the source's 390 × 844 coordinate system.
+// Only this inner canvas scales; the surrounding case-study layout stays fluid.
+.px-device {
+  position: relative; width: 100%; min-width: 0; aspect-ratio: 390 / 844;
+  padding: 0; overflow: hidden; border-radius: 24px; background: #000;
+  color: #ddd8d8; box-shadow: 0 0 0 1px #191919, 0 16px 35px #18131b0d;
+}
+.px-ui-screen {
+  --ui-glass: linear-gradient(82deg, rgba(153,153,153,.464) 5.61%, rgba(230,193,208,.409) 47.31%, rgba(166,166,166,.38) 97.3%);
+  --ui-solid: linear-gradient(270deg, #acacac .55%, #9f8b8b 44.7%, #9b9b9b 99.3%);
+  --ui-accent: linear-gradient(216deg, #ec4141, #dd5c8b);
+  position: absolute; top: 0; left: 0; width: 390px; height: 844px;
+  transform: scale(var(--px-ui-scale, 1)); transform-origin: top left;
+  font-family: Inter, Arial, sans-serif; font-size: 14px; line-height: 24px; background: #000;
+  h3, h4, p { margin: 0; }
+  h3 { font-size: 24px; font-weight: 600; line-height: 24px; color: #fff; }
+  img { display: block; max-width: none; flex-shrink: 0; }
+  button { font-family: inherit; line-height: inherit; color: inherit; }
+  button:not(.px-bank-card) { -webkit-appearance: none; }
+}
+.paylux-research .px-ui-screen button { font-family: Inter, Arial, sans-serif; }
+.px-ui-status { height: 54px; padding: 18px 32px 0 47px; display: flex; justify-content: space-between; color: #fff; font-size: 17px; font-weight: 600; line-height: 22px;
+  > div { display: flex; align-items: center; height: 22px; gap: 7px; }
+}
+.px-ui-battery { position: relative; width: 25px; height: 13px; margin-left: 1px; border: 1px solid #ffffff59; border-radius: 4.3px;
+  i { position: absolute; inset: 2px 1px; background: #fff; border-radius: 2px; }
+  img { position: absolute; left: 26px; top: 3.5px; }
+}
+.px-ui-contacts-content { position: absolute; inset: 82px 14px 0; }
+.px-ui-recent { display: flex; gap: 12px; margin-top: 18px;
+  > button { display: block; border: 0; padding: 0; background: none; }
+}
+.px-ui-avatar { display: block; position: relative; width: 48px; height: 48px; flex: 0 0 48px; }
+.px-ui-avatar-ring { position: absolute; inset: 0; }
+.px-ui-avatar-art { position: absolute; left: 4px; top: 4px; }
+.px-ui-list-heading { display: flex; align-items: center; justify-content: space-between; margin: 38px 0 18px; height: 28px; }
+.paylux-research .px-ui-add { display: flex; align-items: center; gap: 3px; border: 1px solid #ec4141; height: 28px; padding: 0 9px; border-radius: 20px; background: none; color: #e9537b; font-size: 16px; }
+.px-ui-contact-scroll { height: 588px; overflow-y: auto; scrollbar-width: none; padding-bottom: 70px; }
+.px-ui-contact-group { position: relative; padding: 20px; margin-bottom: 20px; border-radius: 30px; background: var(--ui-glass); isolation: isolate; overflow: hidden;
+  &::before { content: ''; position: absolute; inset: 0; background: var(--ui-glass); mask: url('../Paylux/ui/474eb.svg') center / 100% 100%; mix-blend-mode: soft-light; opacity: .2; z-index: -1; }
+  h4 { font-family: Poppins, Inter, sans-serif; font-size: 32px; line-height: 48px; font-weight: 600; }
+}
+.px-ui-group-a { height: 216px; &::before { mask-image: url('../Paylux/ui/31971.svg'); } }
+.px-ui-group-b { height: 280px; }
+.px-ui-divider { margin-bottom: 0; }
+.paylux-research .px-ui-contact-row { display: flex; align-items: center; gap: 16px; width: 322px; height: 48px; padding: 0; margin-top: 16px; border: 0; background: none; text-align: left; border-radius: 10px;
+  strong, small { display: block; font-size: 14px; line-height: 20px; white-space: nowrap; }
+  strong { font-weight: 600; color: #ddd8d8; } small { color: #868080; font-weight: 500; }
+  &:hover, &:focus-visible { background: #ffffff0d; }
+}
+.px-ui-nav { position: absolute; z-index: 3; left: 80px; top: 740px; width: 230px; height: 64px; padding: 6px 7px; display: flex; align-items: center; border-radius: 100px; background: linear-gradient(222deg,#151515,#313131);
+  > button, > .px-ui-background-control { display: grid; place-items: center; height: 52px; width: 72px; border: 0; padding: 0; background: none; border-radius: 26px; }
+  .is-current { background: var(--ui-accent); }
+}
+.px-ui-contact-picker { position: absolute; z-index: 5; inset: 210px 14px auto; padding: 20px; border-radius: 30px; background: #4a4448; box-shadow: 0 0 0 1000px #0009;
+  > div { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; h3 { font-size: 20px; } button { background: none; border: 0; font-size: 28px; } }
+  > button { display: flex; align-items: center; gap: 16px; width: 100%; margin: 12px 0; background: none; border: 0; text-align: left; }
+}
+.px-ui-transfer-background { position: absolute; inset: 0; pointer-events: none; isolation: isolate;
+  .px-ui-contact-group { background: linear-gradient(270deg,#6f6868,#988484 45%,#8c8484); }
+}
+.px-ui-shade { position: absolute; z-index: 1; inset: 0; background: #0009; }
+.px-ui-transfer-sheet { position: absolute; z-index: 2; top: 384px; left: 0; width: 390px; height: 460px; border-radius: 30px 30px 0 0; background: var(--ui-solid);
+  h3 { position: absolute; top: 40px; width: 100%; text-align: center; font-size: 20px; line-height: 32px; color: #ddd8d8; }
+}
+.px-ui-handle { position: absolute; top: 12px; left: 177px; width: 36px; height: 4px; border-radius: 100px; background: #adaaba; }
+.px-ui-amount { position: absolute; top: 88px; width: 100%; text-align: center;
+  > span:last-child { display: block; margin-top: 12px; color: #686868; }
+}
+.px-ui-amount-input { display: flex; justify-content: center; align-items: baseline; color: #ea496f; font-size: 26px; line-height: 48px;
+  input { width: 132px; padding: 0; border: 0; border-radius: 0; background: transparent; color: inherit; font: 600 32px/48px Inter,Arial,sans-serif; text-align: center; appearance: textfield; }
+  input::-webkit-inner-spin-button, input::-webkit-outer-spin-button { appearance: none; }
+  input:focus-visible { outline: 1px solid #e84b78; outline-offset: 3px; }
+}
+.px-ui-recipient { position: absolute; top: 192px; width: 100%; display: flex; align-items: center; flex-direction: column;
+  .px-ui-avatar { width: 58px; height: 58px; flex-basis: 58px; margin-bottom: 10px; }
+  .px-ui-avatar-art { left: 5px; top: 5px; }
+  strong { font-size: 16px; line-height: 23px; font-weight: 600; }
+  small { color: #686868; font-size: 14px; line-height: 20px; }
+}
+.paylux-research .px-ui-continue { position: absolute; left: 14px; top: 343px; width: 362px; height: 64px; padding: 0; border: 0; border-radius: 67px; background: var(--ui-accent); color: #fff; font-size: 20px; font-weight: 600;
+  &::before { content: ''; position: absolute; inset: 0; border-radius: inherit; background: var(--ui-accent); mask: url('../Paylux/ui/c15ba.svg'); opacity: .2; mix-blend-mode: soft-light; }
+  &:hover { filter: saturate(1.35); }
+}
+.px-ui-form-status { position: absolute; bottom: 8px; width: 100%; text-align: center; font-size: 12px; color: #454045; }
+.px-ui-receipt-toolbar { height: 34px; padding: 0 24px; display: flex; align-items: start; justify-content: space-between;
+  button { padding: 0; background: none; border: 0; }
+}
+.px-ui-previous-receipt { margin: 0 14px; height: 54px; padding: 0 22px; border-radius: 0 0 30px 30px; background: var(--ui-glass); overflow: hidden; }
+.px-ui-screen dl { margin: 0; font-size: 14px; line-height: 24px;
+  > div { display: flex; justify-content: space-between; }
+  dt { color: #a3a5a4; } dd { color: #ddd8d8; margin: 0; font-weight: 600; }
+}
+.px-ui-receipt-time { height: 55px; display: grid; place-items: center; color: #a3a5a4; font-size: 12px; }
+.px-ui-receipt { position: relative; margin: 0 14px; padding: 15px 20px 18px; height: 277px; border-radius: 30px; background: var(--ui-glass); isolation: isolate;
+  &::before { content: ''; position: absolute; inset: 0; border-radius: inherit; background: var(--ui-glass); mask: url('../Paylux/ui/b88e2.svg'); opacity: .2; mix-blend-mode: soft-light; z-index: -1; }
+  h3 { font-size: 14px; line-height: 21px; color: #ddd8d8; }
+  .px-ui-divider { margin: 14px 0 18px; }
+  .px-ui-amount-label { display: block; color: #a3a5a4; text-align: center; }
+  dl { position: absolute; top: 186px; left: 20px; right: 20px; }
+}
+.px-ui-receipt-amount { display: flex; align-items: center; justify-content: center; text-align: center; font-size: 32px; font-weight: 600; line-height: 48px; }
+.px-ui-receipt-details { position: relative; text-align: center; color: #a3a5a4;
+  summary { display: flex; justify-content: center; align-items: center; cursor: pointer; list-style: none; &::-webkit-details-marker { display: none; } img { transform: rotate(180deg); } }
+  > span { position: absolute; z-index: 4; top: 28px; left: 50%; transform: translateX(-50%); padding: 7px 12px; border-radius: 10px; background: #272126; color: #fff; width: max-content; max-width: 290px; font-size: 12px; }
+}
+.px-ui-home-indicator { position: absolute; bottom: 0; left: 0; }
+.px-live-receipt[data-receipt-state="complete"] { animation: px-ui-receipt-confirm 500ms ease-out; }
+@keyframes px-ui-receipt-confirm { 0% { box-shadow: 0 0 0 3px #e94d78; } 100% { box-shadow: 0 0 0 0 transparent; } }
+.px-wallet-device { max-width: none; justify-self: center; aspect-ratio: 390 / 553; border-radius: 24px 24px 0 0; box-shadow: none; mask-image: linear-gradient(#000 0 89%, transparent 100%); }
+.px-ui-screen .px-ui-wallet-card { position: absolute; top: 70px; left: 14px; width: 362px; height: 202px; aspect-ratio: auto; padding: 20px 24px; border-radius: 12px; box-shadow: none;
+  .px-card-top { font: 500 20px/26px Inter,Arial,sans-serif; letter-spacing: 0; }
+  .px-card-balance { gap: 0; font: 500 36px/44px Inter,Arial,sans-serif; letter-spacing: 0; }
+  .px-card-bottom { justify-content: flex-end; font: 500 16px/19px Inter,Arial,sans-serif; margin-right: -4px; }
+  &[data-theme="mono"] .px-ui-visa, &[data-theme="mono"] .px-card-balance img { filter: brightness(0); }
+}
+.px-ui-card-arc { display: none; position: absolute; inset: 0; z-index: -1; img { position: absolute; top: 0; left: 0; } }
+.px-bank-card[data-theme="arc"] { --card-background: #3f5999; .px-ui-card-arc { display: block; } .px-card-art { display: none; } }
+.px-ui-screen .px-card-dots { position: absolute; top: 275px; left: 0; width: 100%; height: 13px; padding: 4px 0; gap: 3px;
+  button { width: 3px; height: 3px; &[aria-pressed="true"] { width: 14px; } }
+}
+.px-ui-transactions { position: absolute; top: 291px; bottom: 0; width: 100%; padding: 29px 12px 0; border-radius: 30px 30px 0 0; background: var(--ui-glass); isolation: isolate;
+  &::before { content: ''; position: absolute; inset: 0; background: var(--ui-glass); mask: url('../Paylux/ui/d025e.svg'); mix-blend-mode: soft-light; opacity: .2; z-index: -1; }
+  header { display: flex; align-items: center; justify-content: space-between; padding: 0 2px; margin-bottom: 12px; height: 31px; h3 { font-size: 24px; line-height: 31px; letter-spacing: -.6px; } }
+}
+.paylux-research .px-ui-view-more { background: none; padding: 0 10px; border: 1px solid #ec4141; border-radius: 20px; color: #e8537c; font-size: 12px; line-height: 22px; }
+.px-ui-transaction-scroll { height: 481px; overflow-y: auto; padding-bottom: 85px; scrollbar-width: none; scroll-behavior: smooth; }
+.px-ui-transaction { display: flex; align-items: center; gap: 12px; height: 64px; width: 362px; border-radius: 20px; padding: 12px; margin-bottom: 10px; background: var(--ui-solid); color: #000; }
+.px-ui-merchant { width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; background: #fff; flex: 0 0 40px; }
+.px-ui-transaction-label { display: flex; flex-direction: column; gap: 3px; min-width: 0;
+  > strong { color: #000; font-size: 16px; line-height: 19px; font-weight: 500; white-space: nowrap; }
+}
+.px-ui-category { color: #686868; font-size: 12px; line-height: 12px; }
+.px-ui-transaction-amount { margin-left: auto; text-align: right;
+  strong { display: flex; justify-content: end; align-items: center; font-size: 16px; line-height: 19px; font-weight: 500; }
+  small { display: block; color: #686868; font-size: 12px; line-height: 12px; }
+}
+.px-wallet-device .px-ui-nav { background: transparent; }
+.px-ui-sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.px-contact-avatar { display: grid; place-items: center; flex: 0 0 21%; aspect-ratio: 1; padding: 3px; border-radius: 50%; border: 1px dashed #f5607a; background: transparent;
+  img { width: 100%; height: auto; border-radius: 50%; }
+  &:hover, &[aria-pressed="true"] { border-style: solid; border-color: var(--px-pink); }
+}
+@media (max-width: 760px) { .px-wallet-device { width: min(100%,360px); } .px-card-options { padding-top: 0; } }
+
+.px-ui-previous-receipt { position: relative; isolation: isolate; &::before { content: ""; position: absolute; inset: 0; background: var(--ui-glass); mask: url("../Paylux/ui/9f758.svg"); mix-blend-mode: soft-light; opacity: .2; z-index: -1; } }
+
+// Match the card showcase: generous white center card and quiet corner treatment.
+.paylux-research .px-card-options .px-bank-card { font-family: Inter, Arial, sans-serif; padding: 7% 6%; }
+.px-card-options .px-card-bottom { justify-content: flex-end; }
+.px-card-options .px-card-balance { font-family: Inter, Arial, sans-serif; font-weight: 500; letter-spacing: -.025em; }
+.px-card-options .px-card-top strong { font-family: Arial, sans-serif; }
+.px-ui-screen .px-ui-wallet-card { border-radius: 22px; }
+
+.px-wallet-device .px-ui-transaction-scroll { height: 190px; padding-bottom: 40px; }

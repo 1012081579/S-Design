@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Elms+Sans:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Elms+Sans:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&family=Poppins:wght@600&display=swap");
 
 $font-stack: "Elms Sans", "Century Gothic", CenturyGothic, AppleGothic, Arial, sans-serif;
 $profile-orb-size: 110px;
@@ -1548,7 +1548,9 @@ body.religio-page {
   display: none;
 }
 
-.religio-panel h2 {
+.religio-panel h2,
+.detail-section-title {
+  font-family: $font-stack;
   margin: 0;
   color: #111827;
   font-size: clamp(64px, 6vw, 88px);
@@ -2036,7 +2038,8 @@ body.religio-page {
     border-left: 0;
   }
 
-  .religio-panel h2 {
+  .religio-panel h2,
+  .detail-section-title {
     font-size: clamp(46px, 13vw, 64px);
   }
 

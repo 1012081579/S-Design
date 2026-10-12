@@ -1,8 +1,8 @@
 import { applyRandomHover, setupRandomSelectionColor, setupReveal } from "./ui";
 
 const DETAIL_HOVER_TARGETS = [
-  "a:not(.profile-contact-card)",
-  "button",
+  "a:not(.profile-contact-card):not(.paylux-research a)",
+  "button:not(.paylux-research button)",
   ".religio-chip",
   ".religio-panel",
   ".religio-step",
