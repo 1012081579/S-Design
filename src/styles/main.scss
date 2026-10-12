@@ -1371,8 +1371,8 @@ body.profile-detail-closing .lesson-area {
 body.religio-page {
   height: auto;
   min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
+  // The document owns scrolling; avoid a second scroll container on body.
+  overflow: visible;
   background: #fbfbf9;
 }
 
@@ -1391,6 +1391,18 @@ body.religio-page {
   left: 0;
   right: 0;
   z-index: 100;
+  // Keep text on a stable layer, independent of the scrolling glass backdrop.
+  isolation: isolate;
+  transform: translateZ(0);
+  background: rgba(251, 251, 249, 0.9);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+.religio-page .topbar::before {
+  z-index: -1;
+  opacity: 1;
+  @include glass-backdrop(blur(16px) saturate(1.2));
 }
 
 .detail-back {
@@ -1416,11 +1428,12 @@ body.religio-page {
   top: 56px;
   left: 0;
   z-index: 80;
-  width: var(--detail-progress, 0%);
+  width: 100%;
   height: 2px;
   pointer-events: none;
   background: var(--orange);
-  transition: width 120ms linear;
+  transform: scaleX(var(--detail-progress, 0));
+  transform-origin: left center;
 }
 
 .religio-detail {

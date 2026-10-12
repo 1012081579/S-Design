@@ -17,21 +17,26 @@ const setupScrollProgress = (): void => {
   scrollProgressController = new AbortController();
 
   const updateProgress = () => {
+    progressFrame = 0;
     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const progress = scrollable > 0 ? window.scrollY / scrollable : 0;
 
     document.documentElement.style.setProperty(
       "--detail-progress",
-      `${clamp(progress, 0, 1) * 100}%`,
+      String(clamp(progress, 0, 1)),
     );
   };
 
+  const scheduleProgress = () => {
+    if (!progressFrame) progressFrame = requestAnimationFrame(updateProgress);
+  };
+
   updateProgress();
-  window.addEventListener("scroll", updateProgress, {
+  window.addEventListener("scroll", scheduleProgress, {
     passive: true,
     signal: scrollProgressController.signal,
   });
-  window.addEventListener("resize", updateProgress, {
+  window.addEventListener("resize", scheduleProgress, {
     signal: scrollProgressController.signal,
   });
 };
@@ -47,10 +52,10 @@ const setupAutoplayVideos = (): void => {
       void video.play().catch(() => undefined);
     };
 
-    playVideo();
-    window.addEventListener("load", playVideo, { once: true });
+    videos.add(video);
 
     if (!("IntersectionObserver" in window)) {
+      playVideo();
       return;
     }
 
@@ -58,17 +63,34 @@ const setupAutoplayVideos = (): void => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           playVideo();
+        } else {
+          video.pause();
         }
       });
     }, { rootMargin: "240px" });
 
+    videoObservers.push(observer);
     observer.observe(video);
   });
 };
 
 let scrollProgressController: AbortController | undefined;
+let progressFrame = 0;
+const videoObservers: IntersectionObserver[] = [];
+const videos = new Set<HTMLVideoElement>();
+
+export const destroyReligioPage = (): void => {
+  scrollProgressController?.abort();
+  cancelAnimationFrame(progressFrame);
+  progressFrame = 0;
+  videoObservers.splice(0).forEach((observer) => observer.disconnect());
+  videos.forEach((video) => video.pause());
+  videos.clear();
+  document.documentElement.style.removeProperty("--detail-progress");
+};
 
 export const initReligioPage = (): void => {
+  destroyReligioPage();
   setupRandomSelectionColor();
   applyRandomHover(document, DETAIL_HOVER_TARGETS);
   setupScrollProgress();

@@ -3,7 +3,7 @@ import SwupBodyClassPlugin from "@swup/body-class-plugin";
 import SwupHeadPlugin from "@swup/head-plugin";
 
 import { initHomePage } from "./main";
-import { initReligioPage } from "./religio";
+import { initReligioPage, destroyReligioPage } from "./religio";
 import { initPayluxResearch, destroyPayluxResearch } from "./paylux";
 import "./styles/main.scss";
 import "./styles/paylux.scss";
@@ -33,5 +33,8 @@ const swup = new Swup({
 });
 
 initCurrentPage();
-swup.hooks.before("content:replace", destroyPayluxResearch);
+swup.hooks.before("content:replace", () => {
+  destroyPayluxResearch();
+  destroyReligioPage();
+});
 swup.hooks.on("page:view", initCurrentPage);
